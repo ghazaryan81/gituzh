@@ -562,10 +562,6 @@ a {
   font-size: clamp(var(--fs-160), 1.8055555556vw, var(--fs-260));
 }
 
-.dn {
-  display: none;
-}
-
 .indicator__content {
   padding: clamp(3rem, 3.4722222222vw, 5rem) clamp(5rem, 5.5555555556vw, 8rem);
   background: rgba(var(--gray-6));
