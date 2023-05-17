@@ -509,7 +509,35 @@ a {
 	font-weight: var(--fw-400);
 	letter-spacing: var(--ls-400);
 	color: rgb(var(--blue-1));
-	text-decoration-line: underline;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: linear 0.16s all;
+	&:after {
+		position: absolute;
+		bottom: 3px;
+		left: 0;
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: rgb(var(--blue-1));
+		transition: linear 0.16s all;
+		z-index: -1;
+	}
+
+	&:hover {
+		color: rgb(var(--white-1));
+		&:after {
+			height: 150%;
+			bottom: -25%;
+			left: -10%;
+			width: 120%;
+		}
+	}
+
+	// text-decoration-line: underline;
 	line-height: clamp(
 		var(--lh-220),
 		rem-vw(map.get($line-height, lh-300), $xl),
