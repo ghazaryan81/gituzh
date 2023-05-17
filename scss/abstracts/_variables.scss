@@ -1,3 +1,4 @@
+@use "sass:map";
 $grid: (
 	xs: 32rem,
 	sm: 54rem,
@@ -99,6 +100,7 @@ $line-height: (
 	lh-340: 3.4rem,
 	lh-350: 3.5rem,
 	lh-400: 4rem,
+	lh-560: 5.6rem,
 	lh-750: 7.5rem,
 	lh-860: 8.6rem,
 	lh-1110: 11.1rem,
@@ -132,3 +134,46 @@ $global: (
 	global-font-size-reduce: 62.5%,
 	global-min-width: 200px,
 );
+
+$xs: map.get($grid, xs);
+$sm: map.get($grid, sm);
+$md: map.get($grid, md);
+$lg: map.get($grid, lg);
+$xl: map.get($grid, xl);
+
+:root {
+	@each $item, $val in $global {
+		--#{$item}: #{$val};
+	}
+
+	@each $item, $val in $grid {
+		--#{$item}: #{$val};
+	}
+
+	@each $item, $val in $color {
+		--#{$item}: #{$val};
+	}
+
+	@each $item, $val in $font-size {
+		--#{$item}: #{$val};
+	}
+
+	@each $item, $val in $font-weight {
+		--#{$item}: #{$val};
+	}
+
+	@each $item, $val in $line-height {
+		--#{$item}: #{$val};
+	}
+
+	@each $item, $val in $letter-spacing {
+		--#{$item}: #{$val};
+	}
+
+	@each $item, $val in $border-radius {
+		--#{$item}: #{$val};
+	}
+
+	--font-family-root: Mardoto, sans-serif;
+	font-size: var(--global-font-size-reduce);
+}
