@@ -1,11 +1,10 @@
 {
 	"name": "Project",
-	"short_name": "Project",
+	"short_name": "Գիտուժ նախաձեռնություն",
 	"display": "browser",
 	"background_color": "#ffffff",
-	"description": "Project",
+	"description": "Գիտուժ նախաձեռնություն",
 	"dir": "ltr",
-	"categories": "Project",
 	"lang": "ru",
 	"orientation": "any",
 	"scope": "/",
