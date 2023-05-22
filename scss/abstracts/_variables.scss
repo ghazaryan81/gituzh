@@ -135,6 +135,8 @@ $global: (
 	global-min-width: 200px,
 );
 
+$easy: ();
+
 $xs: map.get($grid, xs);
 $sm: map.get($grid, sm);
 $md: map.get($grid, md);
