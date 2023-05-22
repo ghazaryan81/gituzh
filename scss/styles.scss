@@ -36,15 +36,13 @@ $font-file-types: "woff2" "woff";
 html,
 body {
 	width: 100%;
-	height: 100%;
-	overflow-x: hidden;
+	// height: 100%;
+	// overflow-x: hidden;
+	scroll-behavior: smooth;
 } // body
 
 .wrapper {
-	// overflow-x: hidden;
 	width: 100%;
-	// min-height: 100%;
-	// border: solid #ff0000 10px;
 } // .wrapper
 
 body {
@@ -120,14 +118,18 @@ a {
 } // .section-fix
 
 .header {
+	box-shadow: 0 4px 6px rgba(var(--blue-4), 0.18);
+	background-color: rgb(var(--white-1));
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
 	&__content {
 		@include px(2.3rem, 2.6rem);
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		min-height: 9.235rem;
-		box-shadow: 0 4px 6px rgba(var(--blue-4), 0.18);
-		background-color: rgb(var(--white-1));
 
 		.logo {
 			display: inline-block;
@@ -143,7 +145,7 @@ a {
 
 			li {
 				@include px(clamp(0.5rem, rem-vw(4rem, $xl), 4rem));
-			} // .header__content .menu__li
+			} // .header__content .menu li
 		} // .header__content .menu
 
 		.btn {
@@ -184,13 +186,13 @@ a {
 
 		&--current {
 			font-weight: var(--fw-700);
-		} // .menu__link--current
+		} // .menu a--current
 
 		&--current,
 		&:hover {
 			color: rgb(var(--blue-1));
-		} // .menu__link:hover
-	} // .menu__link
+		} // .menu a:hover
+	} // .menu a
 } // .menu
 
 .btn {
@@ -259,15 +261,16 @@ a {
 } // .group
 
 .footer {
+	@include selection-invert;
+	background-color: rgb(var(--blue-1));
+
 	&--spacer {
 		margin-top: 9rem;
 	} // .footer--spacer
-	@include selection-invert;
 
 	&__content {
 		display: flex;
 		justify-content: space-between;
-		background-color: rgb(var(--blue-1));
 		border-radius: var(--radius-1);
 		min-height: 14.6rem;
 		padding: 4rem;
@@ -311,7 +314,6 @@ a {
 	} // .soc-links--footer
 } // .soc-links
 
-/* prettier-ignore */
 .soc-link {
 	@include wh(3.199rem);
 	@include f-center;
@@ -325,10 +327,8 @@ a {
 		content: "";
 		background-color: rgb(var(--white-1));
 		border: solid rgb(var(--white-1)) 1px;
-		transition: linear background-color 0.16s, 
-              linear border 0.16s,
-              linear width 0.25s,
-              linear height 0.25s;
+		transition: linear background-color 0.16s, linear border 0.16s,
+			linear width 0.25s, linear height 0.25s;
 		will-change: background-color, border width height;
 		border-radius: 50%;
 		z-index: -1;
@@ -337,8 +337,7 @@ a {
 	svg {
 		fill: rgb(var(--blue-1));
 		transform: scale(1);
-		transition: linear 0.16s fill,
-              linear 0.16s transform;
+		transition: linear 0.16s fill, linear 0.16s transform;
 		will-change: fill, transform;
 	} // .soc-link svg
 
@@ -362,21 +361,22 @@ a {
 .info {
 	@include selection;
 
+	background-color: rgb(var(--gray-4));
+	background-repeat: repeat;
+	background-position: center;
+	// background-size: cover;
+	background-image: image-set(
+		url("../img/section-bg-1x.png") 1x,
+		url("../img/section-bg-1.5x.png") 1.5x,
+		url("../img/section-bg-2x.png") 2x,
+		url("../img/section-bg-3x.png") 3x,
+		url("../img/section-bg-4x.png") 4x
+	);
+
 	&__content {
 		@include f-center;
 		@include px(1rem);
 		min-height: clamp(30rem, rem-vw(50rem, $xl), 50rem);
-		background-color: rgb(var(--gray-6));
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		background-image: image-set(
-			url("../img/section-bg-1x.png") 1x,
-			url("../img/section-bg-1.5x.png") 1.5x,
-			url("../img/section-bg-2x.png") 2x,
-			url("../img/section-bg-3x.png") 3x,
-			url("../img/section-bg-4x.png") 4x
-		);
 	} // .info__content
 
 	&__content-group {
@@ -404,6 +404,19 @@ a {
 	);
 
 	color: rgba(var(--blue-1));
+	&.--about {
+		letter-spacing: clamp(
+			var(--ls-100),
+			rem-vw(map.get($letter-spacing, ls-1800), $xl),
+			var(--ls-1800)
+		);
+
+		line-height: clamp(
+			var(--lh-300),
+			rem-vw(map.get($line-height, lh-790), $xl),
+			var(--lh-790)
+		);
+	} // .h1.--about
 } // .h1
 
 .description {
@@ -420,6 +433,14 @@ a {
 	} // .description--about
 
 	&--about {
+		letter-spacing: calc(
+			clamp(
+					var(--ls-100),
+					rem-vw(map.get($letter-spacing, ls-1600), $xl),
+					var(--ls-1600)
+				) * -1
+		);
+
 		font-size: clamp(
 			var(--fs-160),
 			rem-vw(map.get($font-size, fs-300), $xl),
@@ -438,13 +459,12 @@ a {
 
 .goal {
 	@include selection;
-
+	background-color: rgb(var(--white-1));
 	&__content {
 		display: flex;
 		padding: clamp(3.3rem, rem-vw(3.3rem, $xl), 3.3rem)
 			clamp(4.1rem, rem-vw(8.2rem, $xl), 8.2rem);
 		min-height: clamp(31rem, rem-vw(51rem, $xl), 51rem);
-		background-color: rgb(var(--white-1));
 
 		.default-link {
 			@include p(rel, 2.5rem);
@@ -537,7 +557,6 @@ a {
 		} // .default-link:hover:after
 	} // .default-link:hover
 
-	// text-decoration-line: underline;
 	line-height: clamp(
 		var(--lh-220),
 		rem-vw(map.get($line-height, lh-300), $xl),
@@ -551,11 +570,11 @@ a {
 } // .default-link
 
 .indicator {
+	background: rgba(var(--gray-4));
 	&__content {
 		@include selection;
 		padding: clamp(3rem, rem-vw(5rem, $xl), 5rem)
 			clamp(5rem, rem-vw(8rem, $xl), 8rem);
-		background: rgba(var(--gray-6));
 		@include media($sm) {
 			.arrs-group--1 {
 				padding-top: 0;
@@ -643,6 +662,7 @@ a {
 			clamp(1rem, rem-vw(4.476rem, $xl), 4.476rem),
 			clamp(1rem, rem-vw(4.314rem, $xl), 4.314rem)
 		);
+
 		&--arr-to-bottom-right {
 			fill-opacity: 0.25;
 		} // .arrs-group .icon--arr-to-bottom-right
@@ -665,6 +685,23 @@ a {
 		rem-vw(map.get($line-height, lh-860), $xl),
 		var(--lh-860)
 	);
+
+	&--about {
+		font-weight: var(--fw-700);
+		font-size: clamp(
+			var(--fs-220),
+			rem-vw(map.get($font-size, fs-400), $xl),
+			var(--fs-420)
+		);
+
+		padding-top: clamp(0.8rem, rem-vw(1.9rem, $xl), 1.9rem);
+		margin-left: -0.5rem;
+		letter-spacing: clamp(
+			var(--ls-100),
+			rem-vw(map.get($font-size, fs-800), $xl),
+			var(--ls-2000)
+		);
+	} // .h2--about
 } // .h2
 
 .count {
@@ -707,7 +744,6 @@ a {
 	} // .count__label
 
 	&__value {
-		// @include selection-invert;
 		display: block;
 		width: 100%;
 		text-align: center;
@@ -913,92 +949,165 @@ a {
 } // .js-typo-intro
 
 .dn {
-	// display: none !important;
 } // .dn
 
-/* prettier-ignore */
 .about {
 	&__content {
-		padding: clamp(3rem, rem-vw(15rem, $xl), 13.1rem) 
-           clamp(3rem, rem-vw(16.6rem, $xl), 16.6rem)
-           clamp(1.8rem, rem-vw(9rem, $xl), 9rem)
-           clamp(1.6rem, rem-vw(8rem, $xl), 8rem);
+		padding: clamp(3rem, rem-vw(11.4rem, $xl), 11.4rem)
+			clamp(3rem, rem-vw(16.6rem, $xl), 16.6rem)
+			clamp(1.8rem, rem-vw(9rem, $xl), 9rem) clamp(1.6rem, rem-vw(8rem, $xl), 8rem);
 		@include media($xs) {
-				padding: clamp(3rem, rem-vw(15rem, $xl), 13.1rem) 
-             clamp(1.6rem, rem-vw(8rem, $xl), 8rem)
-             clamp(1.8rem, rem-vw(9rem, $xl), 9rem)
-             clamp(1.6rem, rem-vw(8rem, $xl), 8rem);
-  } // .about__content @include media($xs)
+			padding: clamp(3rem, rem-vw(15rem, $xl), 13.1rem)
+				clamp(1.6rem, rem-vw(8rem, $xl), 8rem)
+				clamp(1.8rem, rem-vw(9rem, $xl), 9rem)
+				clamp(1.6rem, rem-vw(8rem, $xl), 8rem);
+		} // .about__content @include media($xs)
 	} // .about__content
 } // .about
 
+.about-image {
+	width: 100%;
+	height: auto;
+
+	&--star {
+		max-width: 27.34rem;
+	} // .about-image--star
+
+	&--telescope {
+		max-width: 27.34rem;
+	} // .about-image--telescope
+
+	&--balance {
+		max-width: 27.34rem;
+	} // .about-image--balance
+} // .about-image
+
 .grid-c-r2 {
-	/* prettier-ignore */
 	&.--about {
+		&.--1 {
+			margin-bottom: 2rem;
+		} // .grid-c-r2.--about.--1
+
+		&.--2 {
+			margin-bottom: 3.9rem;
+		} // .grid-c-r2.--about.--2
+
+		&.--3 {
+			margin-bottom: 0.4rem;
+			.cell.--c {
+				padding-top: 5.8rem;
+				.about-image {
+					&--telescope {
+						transform: translate(1.1rem, -0.5rem);
+					} // .grid-c-r2.--about.--3 .cell.--c .about-image--telescope
+				} // .grid-c-r2.--about.--3 .cell.--c .about-image
+			} // .grid-c-r2.--about.--3 .cell.--c
+		} // .grid-c-r2.--about.--3
+
+		&.--4 {
+			margin-bottom: 0.4rem;
+			.cell.--c {
+				padding-top: 6.2rem;
+				.about-image {
+					&--balance {
+						transform: translate(1.1rem, 0rem);
+					} // .grid-c-r2.--about.--4 .cell.--c .about-image--balance
+				} // .grid-c-r2.--about.--4 .cell.--c .about-image
+			} // .grid-c-r2.--about.--4 .cell.--c
+		} // .grid-c-r2.--about.--4
+
 		display: grid;
 		width: 100%;
-		gap: 20px;
+		gap: 0 2rem;
 		grid-template-columns: 32.092617% 1fr;
 		grid-template-rows: 2;
-		grid-template-areas: "c r1"
-                       "c r2";
+		grid-template-areas:
+			"c r1"
+			"c r2";
 		.cell {
-			&.--c { grid-area: c; } // .grid-c-r2.--about .cell.--c
-			&.--r1 { grid-area: r1; } // .grid-c-r2.--about .cell.--r1
-			&.--r2 { grid-area: r2; } // .grid-c-r2.--about .cell.--r2
+			&.--c {
+				grid-area: c;
+				padding-right: 4rem;
+
+				@include media($xs) {
+					@include py(4rem);
+				} // .grid-c-r2.--about .cell.--c @include media($xs)
+			} // .grid-c-r2.--about .cell.--c
+			&.--r1 {
+				grid-area: r1;
+			} // .grid-c-r2.--about .cell.--r1
+			&.--r2 {
+				grid-area: r2;
+			} // .grid-c-r2.--about .cell.--r2
 		} // .grid-c-r2.--about .cell
 		@include media($xs) {
 			grid-template-columns: 100%;
 			grid-template-rows: auto auto auto;
-			grid-template-areas: "r1"
-                        "c-r2"
-                        "r2-r3";
-   .cell {
-    &.--c { grid-area: c-r2; } // .grid-c-r2.--about @include media($xs) .cell.--c
-    &.--r1 { grid-area: r1; } // .grid-c-r2.--about @include media($xs) .cell.--r1
-    &.--r2 { grid-area: r2-r3; } // .grid-c-r2.--about @include media($xs) .cell.--r2
-   } // .grid-c-r2.--about @include media($xs) .cell
+			grid-template-areas:
+				"r1"
+				"c-r2"
+				"r2-r3";
+			.cell {
+				&.--c {
+					grid-area: c-r2;
+				} // .grid-c-r2.--about @include media($xs) .cell.--c
+				&.--r1 {
+					grid-area: r1;
+				} // .grid-c-r2.--about @include media($xs) .cell.--r1
+				&.--r2 {
+					grid-area: r2-r3;
+				} // .grid-c-r2.--about @include media($xs) .cell.--r2
+			} // .grid-c-r2.--about @include media($xs) .cell
 		} // .grid-c-r2.--about @include media($xs)
 	} // .grid-c-r2.--about
 } // .grid-c-r2
 
-// .description
 .description {
-	// .description--about-space
 	&--about-space {
-		padding: clamp(0.5rem, rem-vw(2.5rem, $xl), 2.5rem) 0;
+		padding-bottom: clamp(2rem, rem-vw(5rem, $xl), 5rem);
 	} // .description--about-space
 } // .description
 
-.flex {
-	&--decor-icon {
+.decor-icon {
+	&--about {
 		display: flex;
 		justify-content: space-between;
-		padding-top: 2rem;
-		padding-right: 3rem;
-		padding-left: 0.6rem;
-		padding-bottom: clamp(1.5rem, vw-rem(4.5rem, $xl), 4.5rem);
+		padding-right: clamp(0.1rem, rem-vw(3rem, $xl), 3rem);
+		padding-left: 0.1rem;
+		padding-bottom: clamp(2rem, rem-vw(7rem, $xl), 7rem);
 		gap: 1.5rem;
-	} // .flex--decor-icon
-} // .flex
+	} // .decor-icon--about
+} // .decor-icon
 
-// .decor-icon
 .decor-icon {
-	// .decor-icon--1
 	&--1 {
 		width: 100%;
 		max-width: clamp(3.127rem, rem-vw(7.063rem, $xl), 7.063rem);
 	} // .decor-icon--1
 
-	// .decor-icon--2
 	&--2 {
 		width: 100%;
 		max-width: clamp(6.127rem, rem-vw(11.127rem, $xl), 11.127rem);
 	} // .decor-icon--2
 
-	// .decor-icon--3
 	&--3 {
 		width: 100%;
 		max-width: clamp(3.063rem, rem-vw(7.063rem, $xl), 7.063rem);
 	} // .decor-icon--3
 } // .decor-icon
+
+.values-list {
+	.__it {
+		@include p;
+		padding-left: 3.7rem;
+	} // .values-list .__it
+} // .values-list
+
+.icon {
+	&--tringle-next {
+		position: absolute;
+		fill: rgb(var(--blue-5));
+		top: clamp(0.1rem, rem-vw(1.1rem, $xl), 1.1rem);
+		left: 0;
+	} // .icon--tringle-next
+} // .icon
