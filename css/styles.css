@@ -20,6 +20,7 @@
   --blue-4: 181, 183, 197;
   --blue-5: 117, 155, 240;
   --blue-6: 174, 182, 249;
+  --blue-7: 240, 241, 255;
   --white-1: 255, 255, 255;
   --fs-100: 1rem;
   --fs-110: 1.1rem;
@@ -91,6 +92,8 @@
   --lh-340: 3.4rem;
   --lh-350: 3.5rem;
   --lh-400: 4rem;
+  --lh-460: 4.6rem;
+  --lh-500: 5rem;
   --lh-560: 5.6rem;
   --lh-750: 7.5rem;
   --lh-790: 7.9rem;
@@ -716,12 +719,18 @@ a {
   font-size: clamp(var(--fs-300), 5.5555555556vw, var(--fs-800));
   line-height: clamp(var(--lh-300), 5.9722222222vw, var(--lh-860));
 }
-.h2--about {
+.h2--supporter, .h2--about {
   font-weight: var(--fw-700);
   font-size: clamp(var(--fs-220), 2.7777777778vw, var(--fs-420));
+  letter-spacing: clamp(var(--ls-100), 5.5555555556vw, var(--ls-2000));
+}
+.h2--supporter {
+  line-height: clamp(var(--lh-250), 3.4722222222vw, var(--lh-500));
+  letter-spacing: clamp(0.09rem, 0.125vw, var(--ls-1800));
+}
+.h2--about-spacer {
   padding-top: clamp(0.8rem, 1.3194444444vw, 1.9rem);
   margin-left: -0.5rem;
-  letter-spacing: clamp(var(--ls-100), 5.5555555556vw, var(--ls-2000));
 }
 
 .count {
@@ -941,6 +950,15 @@ a {
   display: inline-block;
 }
 
+.about ::-moz-selection {
+  background: rgb(var(--blue-1));
+  color: rgb(var(--white-1));
+}
+
+.about ::selection {
+  background: rgb(var(--blue-1));
+  color: rgb(var(--white-1));
+}
 .about__content {
   padding: clamp(3rem, 7.9166666667vw, 11.4rem) clamp(3rem, 11.5277777778vw, 16.6rem) clamp(1.8rem, 6.25vw, 9rem) clamp(1.6rem, 5.5555555556vw, 8rem);
 }
@@ -1067,4 +1085,110 @@ a {
   fill: rgb(var(--blue-5));
   top: clamp(0.1rem, 0.7638888889vw, 1.1rem);
   left: 0;
+}
+.icon--supporter {
+  fill: rgb(var(--blue-5));
+  margin-right: 7px;
+  width: clamp(1rem, 2.4763888889vw, 3.566rem);
+  height: clamp(1rem, 2.4763888889vw, 3.566rem);
+}
+
+.supporter ::-moz-selection {
+  background: rgb(var(--blue-1));
+  color: rgb(var(--white-1));
+}
+
+.supporter ::selection {
+  background: rgb(var(--blue-1));
+  color: rgb(var(--white-1));
+}
+.supporter__content {
+  padding: clamp(3.1rem, 4.1666666667vw, 6rem) clamp(4.1rem, 6.3888888889vw, 9.2rem) clamp(4.1rem, 6.25vw, 9rem) clamp(4.1rem, 5.625vw, 8.1rem);
+}
+
+.arrows-cell {
+  padding-top: clamp(2.8rem, 3.8888888889vw, 5.6rem);
+  white-space: nowrap;
+}
+
+.tag {
+  white-space: nowrap;
+  display: inline-block;
+  font-weight: var(--fw-700);
+  color: rgb(var(--blue-1));
+  background: rgb(var(--blue-7));
+  border-radius: var(--radius-2);
+  padding: clamp(0.5rem, 0.6944444444vw, 1rem) clamp(1rem, 2.4305555556vw, 3.5rem);
+  font-size: clamp(var(--fs-160), 2.2222222222vw, var(--fs-320));
+  line-height: clamp(var(--lh-260), 3.1944444444vw, var(--lh-460));
+  letter-spacing: var(--ls-200);
+}
+
+.supporter-cols {
+  display: flex;
+  margin-top: clamp(1.9rem, 3.4027777778vw, 4.9rem);
+}
+@media screen and (max-width: 32rem) {
+  .supporter-cols {
+    flex-direction: column;
+  }
+}
+.supporter-cols .__left {
+  width: clamp(20.7rem, 28.2638888889vw, 40.7rem);
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.supporter-cols .__right {
+  width: 100%;
+}
+
+.supporter-list {
+  list-style: none;
+  padding: 3rem 0 0 0;
+  margin: 0;
+  -moz-columns: 2;
+       columns: 2;
+}
+.supporter-list--last {
+  -moz-columns: 1;
+       columns: 1;
+}
+@media screen and (max-width: 32rem) {
+  .supporter-list {
+    -moz-columns: 1;
+         columns: 1;
+  }
+}
+.supporter-list .__it a {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-weight: var(--fw-400);
+  color: rgb(var(--black-1));
+  transition: linear color 0.16s;
+  will-change: color;
+  font-size: clamp(var(--fs-140), 1.8055555556vw, var(--fs-260));
+  line-height: clamp(var(--lh-200), 2.7777777778vw, var(--lh-400));
+  letter-spacing: clamp(var(--ls-100), 0.0138888889vw, var(--ls-200));
+}
+.supporter-list .__it a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: translate(0, -4px);
+  display: block;
+  background: rgb(var(--blue-1));
+  opacity: 0;
+  transition: linear opacity 0.16s, linear transform 0.16s;
+  will-change: opacity, transform;
+}
+.supporter-list .__it a:hover {
+  color: rgb(var(--blue-1));
+}
+.supporter-list .__it a:hover:after {
+  opacity: 1;
+  transform: translate(0, 0);
 }

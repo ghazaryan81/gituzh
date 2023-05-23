@@ -36,8 +36,7 @@ $font-file-types: "woff2" "woff";
 html,
 body {
 	width: 100%;
-	// height: 100%;
-	// overflow-x: hidden;
+
 	scroll-behavior: smooth;
 } // body
 
@@ -364,7 +363,7 @@ a {
 	background-color: rgb(var(--gray-4));
 	background-repeat: repeat;
 	background-position: center;
-	// background-size: cover;
+
 	background-image: image-set(
 		url("../img/section-bg-1x.png") 1x,
 		url("../img/section-bg-1.5x.png") 1.5x,
@@ -686,6 +685,7 @@ a {
 		var(--lh-860)
 	);
 
+	&--supporter,
 	&--about {
 		font-weight: var(--fw-700);
 		font-size: clamp(
@@ -694,14 +694,30 @@ a {
 			var(--fs-420)
 		);
 
-		padding-top: clamp(0.8rem, rem-vw(1.9rem, $xl), 1.9rem);
-		margin-left: -0.5rem;
 		letter-spacing: clamp(
 			var(--ls-100),
 			rem-vw(map.get($font-size, fs-800), $xl),
 			var(--ls-2000)
 		);
 	} // .h2--about
+
+	&--supporter {
+		line-height: clamp(
+			var(--lh-250),
+			rem-vw(map.get($line-height, lh-500), $xl),
+			var(--lh-500)
+		);
+		letter-spacing: clamp(
+			0.09rem,
+			rem-vw(map.get($letter-spacing, ls-1800), $xl),
+			var(--ls-1800)
+		);
+	} // .h2--supporter
+
+	&--about-spacer {
+		padding-top: clamp(0.8rem, rem-vw(1.9rem, $xl), 1.9rem);
+		margin-left: -0.5rem;
+	} // .h2--about-spacer
 } // .h2
 
 .count {
@@ -949,9 +965,11 @@ a {
 } // .js-typo-intro
 
 .dn {
+	// display: none !important;
 } // .dn
 
 .about {
+	@include selection;
 	&__content {
 		padding: clamp(3rem, rem-vw(11.4rem, $xl), 11.4rem)
 			clamp(3rem, rem-vw(16.6rem, $xl), 16.6rem)
@@ -966,8 +984,7 @@ a {
 } // .about
 
 .about-image {
-	width: 100%;
-	height: auto;
+	@include wh(100%, auto);
 
 	&--star {
 		max-width: 27.34rem;
@@ -1110,4 +1127,136 @@ a {
 		top: clamp(0.1rem, rem-vw(1.1rem, $xl), 1.1rem);
 		left: 0;
 	} // .icon--tringle-next
+
+	&--supporter {
+		fill: rgb(var(--blue-5));
+		margin-right: 7px;
+		@include wh(
+			clamp(1rem, rem-vw(3.566rem, $xl), 3.566rem),
+			clamp(1rem, rem-vw(3.566rem, $xl), 3.566rem)
+		);
+	} // .icon--supporter
 } // .icon
+
+.supporter {
+	@include selection;
+	&__content {
+		padding: clamp(3.1rem, rem-vw(6rem, $xl), 6rem)
+			clamp(4.1rem, rem-vw(9.2rem, $xl), 9.2rem)
+			clamp(4.1rem, rem-vw(9rem, $xl), 9rem)
+			clamp(4.1rem, rem-vw(8.1rem, $xl), 8.1rem);
+	} // .supporter__content
+} // .supporter
+
+.arrows-cell {
+	padding-top: clamp(2.8rem, rem-vw(5.6rem, $xl), 5.6rem);
+	white-space: nowrap;
+} // .arrows-cell
+
+.tag {
+	white-space: nowrap;
+	display: inline-block;
+	font-weight: var(--fw-700);
+	color: rgb(var(--blue-1));
+	background: rgb(var(--blue-7));
+	border-radius: var(--radius-2);
+	padding: clamp(0.5rem, rem-vw(1rem, $xl), 1rem)
+		clamp(1rem, rem-vw(3.5rem, $xl), 3.5rem);
+	font-size: clamp(
+		var(--fs-160),
+		rem-vw(map.get($font-size, fs-320), $xl),
+		var(--fs-320)
+	);
+
+	line-height: clamp(
+		var(--lh-260),
+		rem-vw(map.get($line-height, lh-460), $xl),
+		var(--lh-460)
+	);
+
+	letter-spacing: var(--ls-200);
+} // .tag
+
+.supporter-cols {
+	display: flex;
+	margin-top: clamp(1.9rem, rem-vw(4.9rem, $xl), 4.9rem);
+
+	@include media($xs) {
+		flex-direction: column;
+	} // .supporter-cols @include media($xs)
+
+	.__left {
+		width: clamp(20.7rem, rem-vw(40.7rem, $xl), 40.7rem);
+		flex-grow: 0;
+		flex-shrink: 0;
+	} // .supporter-cols .__left
+	.__right {
+		width: 100%;
+	} // .supporter-cols .__right
+} // .supporter-cols
+
+.supporter-list {
+	list-style: none;
+	padding: 3rem 0 0 0;
+	margin: 0;
+	columns: 2;
+
+	&--last {
+		columns: 1;
+	} // .supporter-list--last
+
+	@include media($xs) {
+		columns: 1;
+	} // .supporter-list @include media($xs)
+
+	.__it {
+		a {
+			@include p;
+			font-weight: var(--fw-400);
+			color: rgb(var(--black-1));
+			transition: linear color 0.16s;
+			will-change: color;
+
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				transform: translate(0, -4px);
+				display: block;
+				background: rgb(var(--blue-1));
+				opacity: 0;
+				transition: linear opacity 0.16s, linear transform 0.16s;
+				will-change: opacity, transform;
+			} // .supporter-list .__it a:after
+
+			&:hover {
+				color: rgb(var(--blue-1));
+				&:after {
+					opacity: 1;
+					transform: translate(0, 0);
+				} // .supporter-list .__it a:hover:after
+			} // .supporter-list .__it a:hover
+
+			font-size: clamp(
+				var(--fs-140),
+				rem-vw(map.get($font-size, fs-260), $xl),
+				var(--fs-260)
+			);
+
+			line-height: clamp(
+				var(--lh-200),
+				rem-vw(map.get($line-height, lh-400), $xl),
+				var(--lh-400)
+			);
+
+			letter-spacing: clamp(
+				var(--ls-100),
+				rem-vw(map.get($letter-spacing, ls-200), $xl),
+				var(--ls-200)
+			);
+		} // .supporter-list .__it a
+	} // .supporter-list .__it
+} // .supporter-list
