@@ -117,11 +117,10 @@ a {
 } // .section-fix
 
 .header {
+	@include selection;
+	@include p;
 	box-shadow: 0 4px 6px rgba(var(--blue-4), 0.18);
 	background-color: rgb(var(--white-1));
-	position: relative;
-	top: 0;
-	left: 0;
 	z-index: 1;
 	&__content {
 		@include px(2.3rem, 2.6rem);
@@ -718,6 +717,23 @@ a {
 		padding-top: clamp(0.8rem, rem-vw(1.9rem, $xl), 1.9rem);
 		margin-left: -0.5rem;
 	} // .h2--about-spacer
+
+	&--companies {
+		text-align: center;
+		display: block;
+		font-weight: var(--fw-700);
+		font-size: clamp(
+			var(--fs-220),
+			rem-vw(map.get($font-size, fs-400), $xl),
+			var(--fs-420)
+		);
+
+		letter-spacing: clamp(
+			var(--ls-100),
+			rem-vw(map.get($font-size, fs-800), $xl),
+			var(--ls-2000)
+		);
+	}
 } // .h2
 
 .count {
@@ -1218,12 +1234,11 @@ a {
 			will-change: color;
 
 			&:after {
+				@include wh(100%, 1px);
 				content: "";
 				position: absolute;
 				bottom: 0;
 				left: 0;
-				width: 100%;
-				height: 1px;
 				transform: translate(0, -4px);
 				display: block;
 				background: rgb(var(--blue-1));
@@ -1260,3 +1275,47 @@ a {
 		} // .supporter-list .__it a
 	} // .supporter-list .__it
 } // .supporter-list
+
+.companies {
+	@include selection;
+	background-color: rgb(var(--gray-4));
+	&__content {
+		padding: clamp(2rem, rem-vw(6.3rem, $xl), 6.3rem)
+			clamp(3rem, rem-vw(8rem, $xl), 8rem) clamp(2rem, rem-vw(7rem, $xl), 7rem)
+			clamp(3rem, rem-vw(8rem, $xl), 8rem);
+	}
+}
+
+.company-list {
+	display: flex;
+	// gap: 1.5rem 2.8rem;
+	gap: 1.5rem 2.56rem;
+	padding-top: 3rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.company-block {
+	@include f-center;
+	background-color: rgb(var(--white-1));
+	border: 1px solid rgb(var(--blue-8));
+	box-shadow: 0px 0px 8px 1px rgb(var(--blue-8));
+	transition: linear 0.16s box-shadow, linear 0.16s transform;
+	will-change: box-shadow, transform;
+	border-radius: var(--radius-3);
+
+	a {
+		display: inline-block;
+		padding: 1.6rem;
+	}
+
+	&__img {
+		width: clamp(10.8rem, rem-vw(15.8rem, $xl), 15.8rem);
+		height: clamp(10.8rem, rem-vw(15.8rem, $xl), 15.8rem);
+	}
+
+	&:hover {
+		box-shadow: 0px 0px 20px 1px rgb(var(--blue-8));
+		transform: scale(1.03);
+	}
+}
