@@ -182,15 +182,18 @@ a {
 		will-change: font, color;
 		white-space: nowrap;
 
-		&--current {
-			font-weight: var(--fw-700);
-		} // .menu a--current
-
 		&--current,
 		&:hover {
 			color: rgb(var(--blue-1));
 		} // .menu a:hover
 	} // .menu a
+
+	&__li--current {
+		a {
+			font-weight: var(--fw-700);
+			color: rgb(var(--blue-1));
+		} // .menu__li--current a
+	} // .menu__li--current
 } // .menu
 
 .btn {
@@ -718,6 +721,13 @@ a {
 		margin-left: -0.5rem;
 	} // .h2--about-spacer
 
+	&--persons {
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 68px;
+		text-align: center;
+		letter-spacing: 0;
+	}
 	&--companies {
 		text-align: center;
 		display: block;
@@ -733,7 +743,7 @@ a {
 			rem-vw(map.get($font-size, fs-800), $xl),
 			var(--ls-2000)
 		);
-	}
+	} // .h2--companies
 } // .h2
 
 .count {
@@ -924,8 +934,10 @@ a {
 		display: block;
 		padding-left: 2rem;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		// flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
 	} // .article__info
 
 	&__descr {
@@ -939,14 +951,32 @@ a {
 	} // .article__descr
 
 	&__details-link {
+		@include p;
 		font-weight: var(--fw-700);
-		text-decoration-line: underline;
+		// text-decoration-line: underline;
 		color: rgb(var(--blue-1));
 		font-size: 1.4rem;
 		line-height: 1.6rem;
 		letter-spacing: 0.02rem;
 		margin-top: 0.5rem;
 		display: inline-block;
+
+		&:after {
+			@include wh(100%, 1px);
+			content: "";
+			position: absolute;
+			bottom: 2px;
+			left: 0;
+			background-color: rgb(var(--blue-1));
+			display: block;
+			transition: transform linear 0.16s;
+			will-change: transform;
+		} // .article__details-link:after
+		&:hover {
+			&:after {
+				transform: translate(0, 3px);
+			} // .article__details-link:hover:after
+		} // .article__details-link:hover
 	} // .article__details-link
 } // .article
 
@@ -1113,18 +1143,17 @@ a {
 } // .decor-icon
 
 .decor-icon {
+	width: 100%;
+	height: auto;
 	&--1 {
-		width: 100%;
 		max-width: clamp(3.127rem, rem-vw(7.063rem, $xl), 7.063rem);
 	} // .decor-icon--1
 
 	&--2 {
-		width: 100%;
 		max-width: clamp(6.127rem, rem-vw(11.127rem, $xl), 11.127rem);
 	} // .decor-icon--2
 
 	&--3 {
-		width: 100%;
 		max-width: clamp(3.063rem, rem-vw(7.063rem, $xl), 7.063rem);
 	} // .decor-icon--3
 } // .decor-icon
@@ -1283,8 +1312,8 @@ a {
 		padding: clamp(2rem, rem-vw(6.3rem, $xl), 6.3rem)
 			clamp(3rem, rem-vw(8rem, $xl), 8rem) clamp(2rem, rem-vw(7rem, $xl), 7rem)
 			clamp(3rem, rem-vw(8rem, $xl), 8rem);
-	}
-}
+	} // .companies__content
+} // .companies
 
 .company-list {
 	display: flex;
@@ -1293,7 +1322,7 @@ a {
 	padding-top: 3rem;
 	flex-wrap: wrap;
 	justify-content: center;
-}
+} // .company-list
 
 .company-block {
 	@include f-center;
@@ -1307,15 +1336,63 @@ a {
 	a {
 		display: inline-block;
 		padding: 1.6rem;
-	}
+	} // .company-block a
 
 	&__img {
 		width: clamp(10.8rem, rem-vw(15.8rem, $xl), 15.8rem);
 		height: clamp(10.8rem, rem-vw(15.8rem, $xl), 15.8rem);
-	}
+	} // .company-block__img
 
 	&:hover {
 		box-shadow: 0px 0px 20px 1px rgb(var(--blue-8));
 		transform: scale(1.03);
+	} // .company-block:hover
+} // .company-block
+
+.persons {
+	&__content {
+		padding: 41px 124px;
+		// padding: 3.2rem 16.6rem 9rem 8rem;
+	} // .persons__content
+} // .persons
+
+.persons-list {
+	display: flex;
+	padding-top: 7.5rem;
+	gap: 32.1px;
+}
+
+.person-block {
+	max-width: 16.998rem;
+	width: 100%;
+
+	.__img {
+		display: block;
+		max-width: 17.998rem;
+		width: 17.998rem;
+		height: auto;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	.__title {
+		display: block;
+		font-weight: var(--fw-700);
+		font-size: 1.8rem;
+		line-height: 2rem;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		letter-spacing: 0.09rem;
+		color: rgb(var(--black-2));
+		padding: 20px 0 30px;
+	}
+	.__descr {
+		font-weight: var(--fw-400);
+		font-size: 1.4rem;
+		line-height: 2rem;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: rgb(var(--black-2));
 	}
 }
