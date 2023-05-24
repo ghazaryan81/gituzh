@@ -144,6 +144,7 @@ a {
 	box-shadow: 0 4px 6px rgba(var(--blue-4), 0.18);
 	background-color: rgb(var(--white-1));
 	z-index: 1;
+	border-bottom: 1px solid rgb(var(--blue-6));
 	&__content {
 		@include px(2.3rem, 2.6rem);
 		display: flex;
