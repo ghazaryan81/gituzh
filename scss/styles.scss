@@ -9,6 +9,7 @@
 @use "abstracts/variables" as *;
 
 @mixin img-overlay {
+	@include p;
 	&:after {
 		@include wh(100%);
 		content: "";
@@ -20,7 +21,7 @@
 		right: 0;
 		background-color: rgb(var(--black-0));
 		opacity: 0;
-		transition: linear opacity 0.2s;
+		transition: opacity var(--ease-linear) var(--duration-2000);
 		will-change: opacity;
 	} // @mixin img-overlay:after
 	&:hover {
@@ -191,6 +192,7 @@ a {
 		display: inline-flex;
 	} // .menu__ul
 
+	// prettier-ignore
 	a {
 		display: inline-block;
 		font-family: var(--font-family-root);
@@ -201,7 +203,8 @@ a {
 			var(--fs-180)
 		);
 		color: var(--gray-5);
-		transition: linear font 0.16s, linear color 0.16s;
+		transition: font var(--ease-linear) var(--duration-1600), 
+              color var(--ease-linear) var(--duration-1600);
 		will-change: font, color;
 		white-space: nowrap;
 
@@ -220,6 +223,7 @@ a {
 } // .menu
 
 .btn {
+	// prettier-ignore
 	&--support {
 		display: inline-block;
 		border-radius: var(--radius-80);
@@ -235,8 +239,8 @@ a {
 		line-height: var(--lh-210);
 		padding: 0.8rem clamp(0.5rem, rem-vw(5rem, $xl), 5rem);
 		border: 1px solid rgb(var(--blue-1));
-		transition: linear background-color 0.16s, linear color 0.16s;
-
+		transition: background-color var(--ease-linear) var(--duration-1600),
+              color var(--ease-linear) var(--duration-1600);
 		&:hover {
 			background-color: rgb(var(--white-1));
 			color: rgb(var(--blue-1));
@@ -252,9 +256,9 @@ a {
 .langs {
 	display: inline-flex;
 
-	@include media($xs) {
+	@include media($sm) {
 		display: none;
-	} // .langs @include media($xs)
+	} // .langs @include media($sm)
 
 	.text-divider {
 		@include px(1rem);
@@ -269,7 +273,7 @@ a {
 	font-weight: var(--fw-300);
 
 	&--current {
-		font-weight: var(--fw-600);
+		font-weight: var(--fw-500);
 	} // .lang--current
 
 	&--hy {
@@ -392,9 +396,10 @@ a {
 		content: "";
 		background-color: rgb(var(--white-1));
 		border: solid rgb(var(--white-1)) 1px;
-		transition: linear background-color 0.16s,
-              linear border 0.16s,
-              linear width 0.16s, linear height 0.16s;
+		transition: background-color var(--ease-linear) var(--duration-1600),
+              border var(--ease-linear) var(--duration-1600),
+              width var(--ease-linear) var(--duration-1600), 
+              height var(--ease-linear) var(--duration-1600);
 		will-change: background-color, 
                border 
                width 
@@ -407,8 +412,8 @@ a {
 	svg {
 		fill: rgb(var(--blue-1));
 		transform: scale(1);
-		transition: linear 0.16s fill, 
-              linear 0.16s transform;
+		transition: fill var(--ease-linear) var(--duration-1600),
+              transform var(--ease-linear) var(--duration-1600);
 		will-change: fill,
                transform;
 	} // .soc-link svg
@@ -489,6 +494,15 @@ a {
 			var(--lh-790)
 		);
 	} // .h1.--about
+
+	&--page {
+		font-size: clamp(
+			var(--fs-300),
+			rem-vw(map.get($font-size, fs-800), $xl),
+			var(--fs-650)
+		);
+		line-height: 145%;
+	} // .h1--page
 } // .h1
 
 .description {
@@ -612,9 +626,10 @@ a {
 	letter-spacing: var(--ls-400);
 	color: rgb(var(--blue-1));
 	z-index: 1;
-	transition: linear 0.16s color;
+	transition: color var(--ease-linear) var(--duration-1600);
 	will-change: color;
 
+	// prettier-ignore
 	&:after {
 		@include wh(100%, 1px);
 		position: absolute;
@@ -623,7 +638,10 @@ a {
 		content: "";
 		display: block;
 		background: rgb(var(--blue-1));
-		transition: linear 0.16s all;
+		transition: width var(--ease-linear) var(--duration-1600), 
+              height var(--ease-linear) var(--duration-1600),
+              bottom var(--ease-linear) var(--duration-1600),
+              left var(--ease-linear) var(--duration-1600);
 		z-index: -1;
 	} // .default-link:after
 
@@ -1263,9 +1281,10 @@ a {
 			@include p;
 			font-weight: var(--fw-400);
 			color: rgb(var(--black-1));
-			transition: linear color 0.16s;
+			transition: color var(--ease-linear) var(--duration-1600);
 			will-change: color;
 
+			// prettier-ignore
 			&:after {
 				@include wh(100%, 1px);
 				content: "";
@@ -1276,7 +1295,8 @@ a {
 				display: block;
 				background: rgb(var(--blue-1));
 				opacity: 0;
-				transition: linear opacity 0.16s, linear transform 0.16s;
+				transition: opacity var(--ease-linear) var(--duration-1600),
+                transform var(--ease-linear) var(--duration-1600);
 				will-change: opacity, transform;
 			} // .supporter-list .__it a:after
 
@@ -1332,12 +1352,14 @@ a {
 	justify-content: center;
 } // .company-list
 
+// prettier-ignore
 .company-block {
 	@include f-center;
 	background-color: rgb(var(--white-1));
 	border: 1px solid rgb(var(--blue-8));
 	box-shadow: 0 0 8px 1px rgb(var(--blue-8));
-	transition: linear 0.16s box-shadow, linear 0.16s transform;
+	transition: box-shadow var(--ease-linear) var(--duration-1600),
+             transform var(--ease-linear) var(--duration-1600);
 	will-change: box-shadow, transform;
 	border-radius: var(--radius-20);
 
@@ -1421,11 +1443,16 @@ a {
 	} // .media-article-cover__figure
 
 	&__link {
-		@include p;
+		@include img-overlay;
 		font-size: 0;
 		display: block;
 		border: 0;
-		@include img-overlay;
+		&:hover {
+			.link-to {
+				transform: translate(-45%, -45%);
+				opacity: 0.85;
+			} // .media-article-cover__link:hover .link-to
+		} // .media-article-cover__link:hover
 	} // .media-article-cover__link
 
 	&__figcaption {
@@ -1490,13 +1517,17 @@ a {
 	} // .media-article__figure
 
 	&__link {
-		@include p;
+		@include img-overlay;
 		border-radius: var(--radius-40);
 		overflow: hidden;
 		display: block;
 		margin-right: clamp(1rem, rem-vw(2rem, $xl), 2rem);
-
-		@include img-overlay;
+		&:hover {
+			.link-to {
+				transform: translate(-45%, -45%);
+				opacity: 0.85;
+			} // .media-article__link:hover .link-to
+		} // .media-article__link:hover
 	} // .media-article__link
 
 	&__picture {
@@ -1535,9 +1566,163 @@ a {
 		text-decoration-line: underline;
 		text-underline-offset: 2px;
 		display: inline-block;
-		transition: linear 0.16s color;
+		transition: color var(--ease-linear) var(--duration-1600);
 		&:hover {
 			color: rgb(var(--blue-5));
 		} // .media-article__details-link:hover
 	} // .media-article__details-link
 } // .media-article
+
+.page {
+	@include selection;
+	background-color: rgb(var(--white-1));
+
+	// prettier-ignore
+	&__content {
+		padding: clamp(3.3rem, rem-vw(3.3rem, $xl), 3.3rem) 2rem;
+		min-height: clamp(31rem, rem-vw(51rem, $xl), 51rem);
+ } // .page__content
+} // .page
+
+.news-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	padding-top: clamp(1.5rem, rem-vw(3rem, $xl), 3rem);
+	gap: clamp(1.5rem, rem-vw(3rem, $xl), 3rem);
+	@include media($sm) {
+		grid-template-columns: 1fr 1fr;
+	} // .news-list @include media($sm)
+	@include media($xs) {
+		grid-template-columns: 1fr;
+	} // .news-list @include media($xs)
+} // .news-list
+
+.news-article {
+	width: 100%;
+	display: block;
+
+	&__picture,
+	&__link {
+		display: block;
+	} // .news-article__link
+
+	&__link {
+		@include p;
+		border-radius: var(--radius-40);
+		overflow: hidden;
+		&:hover {
+			&:hover {
+				.link-to {
+					transform: translate(-45%, -45%);
+					opacity: 0.85;
+				} // .news-article__link:hover:hover .link-to
+			} // .news-article__link:hover:hover
+		} // .news-article__link:hover
+	} // .news-article__link
+
+	&__title {
+		&,
+		&-link {
+			color: rgb(var(--black-1));
+		} // .news-article__title-link
+		&-link {
+			transition: color var(--ease-linear) var(--duration-1600);
+			&:hover {
+				color: rgba(var(--blue-1));
+			} // .news-article__title-link:hover
+		} // .news-article__title-link
+	} // .news-article__title
+
+	// prettier-ignore
+	&__picture {
+		transition: filter var(--ease-out) var(--duration-7000),
+              transform var(--ease-out) var(--duration-7000);
+		will-change: filter, transform;
+		position: relative;
+		top: 0;
+		left: 0;
+		&:after {
+   @include wh(100%);
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: rgb(var(--black-0));
+			opacity: 0;
+			transition: opacity var(--ease-out) var(--duration-7000);
+			will-change: opacity;
+		} // .news-article__picture:after
+		filter: brightness(1);
+		&:hover {
+			transform: scale(1.1);
+			filter: brightness(1.15);
+		} // .news-article__picture:hover
+	} // .news-article__picture
+
+	&__title {
+		margin-top: 10px;
+		@include truncat(2);
+		font-weight: var(--fw-600);
+		line-height: 145%;
+		font-size: clamp(
+			var(--fs-160),
+			rem-vw(map.get($font-size, fs-180), $xl),
+			var(--fs-200)
+		);
+	} // .news-article__title
+
+	&__img {
+		transition: transform var(--ease-linear) var(--duration-1600);
+		will-change: transform;
+		display: block;
+		border-radius: var(--radius-40);
+		@include wh(100%, auto);
+	} // .news-article__img
+	&__descr {
+		// display: none;
+	} // .news-article__descr
+} // .news-article
+
+.link-to {
+	display: block;
+	font-style: normal;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-45%, -50%);
+	z-index: 1;
+	filter: drop-shadow(-1px 0 19px rgba(34, 60, 80, 0.9));
+	opacity: 0;
+	transition: opacity var(--ease-linear) var(--duration-1600),
+		transform var(--ease-linear) var(--duration-1600);
+	will-change: opacity, transform;
+	&--for-media-article-cover {
+		@include wh(6rem);
+
+		@include media($sm) {
+			@include wh(4.1rem);
+		} // .link-to--for-media-article-cover @include media($sm)
+	} // .link-to--for-media-article-cover
+
+	&--for-media-article {
+		@include wh(3.1rem);
+	} // .link-to--for-media-article
+
+	&--for-news-article {
+		@include wh(4.15rem);
+		// prettier-ignore
+		transition: opacity var(--ease-linear) var(--duration-7000),
+              transform var(--ease-linear) var(--duration-7000);
+		will-change: opacity, transform;
+	} // .link-to--for-news-article
+
+	svg {
+		@include wh(100%);
+		fill: rgb(var(--white-1));
+	} // .link-to svg
+} // .link-to

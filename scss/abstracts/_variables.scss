@@ -39,6 +39,9 @@ $font-size: (
 	fs-160: 1.6rem,
 	fs-170: 1.7rem,
 	fs-180: 1.8rem,
+	fs-190: 1.9rem,
+	fs-200: 2rem,
+	fs-210: 2.1rem,
 	fs-220: 2.2rem,
 	fs-260: 2.6rem,
 	fs-250: 2.5rem,
@@ -152,6 +155,19 @@ $border-radius: (
 	radius-100: 10px,
 );
 
+$animation-timing-function: (
+	ease-linear: linear,
+	ease-in: ease-in,
+	ease-out: ease-out,
+	ease-in-out: ease-in-out,
+);
+
+$animation-duration: (
+	duration-1600: 0.16s,
+	duration-2000: 0.2s,
+	duration-7000: 0.7s,
+);
+
 $global: (
 	global-font-size-reduce: 62.5%,
 	global-min-width: 200px,
@@ -195,6 +211,14 @@ $xl: map.get($grid, xl);
 	}
 
 	@each $item, $val in $border-radius {
+		--#{$item}: #{$val};
+	}
+
+	@each $item, $val in $animation-timing-function {
+		--#{$item}: #{$val};
+	}
+
+	@each $item, $val in $animation-duration {
 		--#{$item}: #{$val};
 	}
 
