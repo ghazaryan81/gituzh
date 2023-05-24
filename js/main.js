@@ -21,4 +21,34 @@ window.onload = function () {
 			console.log(window.scrollY);
 		}
 	});
+
+	const clearAltTitle = (className) => {
+		const htaElem = document.querySelectorAll(className);
+		const title = "title";
+		const alt = "alt";
+		for (let i = htaElem.length; i--; i === 0) {
+			htaElem[i].addEventListener("mouseover", () => {
+				if (htaElem[i].hasAttribute(title)) {
+					htaElem[i].setAttribute(`data-${title}`, htaElem[i].getAttribute(title));
+					htaElem[i].removeAttribute(title);
+				}
+				if (htaElem[i].hasAttribute(alt)) {
+					htaElem[i].setAttribute(`data-${alt}`, htaElem[i].getAttribute(alt));
+					htaElem[i].removeAttribute(alt);
+				}
+			});
+			htaElem[i].addEventListener("mouseout", () => {
+				if (htaElem[i].hasAttribute(`data-${title}`)) {
+					htaElem[i].setAttribute(title, htaElem[i].getAttribute(`data-${title}`));
+					htaElem[i].removeAttribute(`data-${title}`);
+				}
+				if (htaElem[i].hasAttribute(`data-${alt}`)) {
+					htaElem[i].setAttribute(alt, htaElem[i].getAttribute(`data-${alt}`));
+					htaElem[i].removeAttribute(`data-${alt}`);
+				}
+			});
+		}
+	};
+
+	clearAltTitle(".js-hta");
 };
