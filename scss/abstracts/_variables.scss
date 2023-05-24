@@ -9,6 +9,7 @@ $grid: (
 
 /* prettier-ignore */
 $color: (
+	black-0: (0, 0, 0),       // color: #000;
 	black-1: (34, 34, 34),    // color: #222222;
 	black-2: (39, 39, 39),    // color: #272727;
 	gray-1: (94, 94, 94),     // color: #5e5e5e;
@@ -40,6 +41,7 @@ $font-size: (
 	fs-180: 1.8rem,
 	fs-220: 2.2rem,
 	fs-260: 2.6rem,
+	fs-250: 2.5rem,
 	fs-290: 2.9rem,
 	fs-300: 3rem,
 	fs-310: 3.1rem,
