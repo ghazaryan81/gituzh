@@ -18,7 +18,7 @@ window.onload = function () {
 			start = false;
 			activePersons.start();
 			activeFund.start();
-			console.log(window.scrollY);
+			// console.log(window.scrollY);
 		}
 	});
 

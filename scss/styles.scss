@@ -747,12 +747,22 @@ a {
 	} // .h2--about-spacer
 
 	&--persons {
-		font-weight: 700;
-		font-size: 42px;
-		line-height: 68px;
 		text-align: center;
-		letter-spacing: 0;
+		font-weight: var(--fw-700);
+		font-size: clamp(
+			var(--fs-220),
+			rem-vw(map.get($font-size, fs-400), $xl),
+			var(--fs-420)
+		);
+
+		letter-spacing: clamp(
+			var(--ls-100),
+			rem-vw(map.get($font-size, fs-800), $xl),
+			var(--ls-2000)
+		);
+		line-height: 140%;
 	} // .h2--persons
+
 	&--companies {
 		text-align: center;
 		display: block;
@@ -943,9 +953,9 @@ a {
 } // .js-typo-intro
 
 .hide {
-	display: none !important;
 } // .hide
 .dn {
+	// display: none !important;
 } // .dn
 
 .about {
@@ -1293,27 +1303,34 @@ a {
 } // .company-block
 
 .persons {
+	// prettier-ignore
 	&__content {
-		padding: 41px 124px;
+		padding: clamp(2.1rem, rem-vw(4.1rem, $xl), 4.1rem)
+           clamp(3.2rem, rem-vw(12.4rem, $xl), 12.4rem);
 	} // .persons__content
 } // .persons
 
 .persons-list {
 	display: flex;
-	padding-top: 7.5rem;
-	gap: 32.1px;
+	padding-top: clamp(3rem, rem-vw(7.5rem, $xl), 7.5rem);
+	gap: 3.41rem;
 	flex-wrap: wrap;
+	justify-content: center;
 } // .persons-list
 
 .person-block {
+	// max-width: 16.998rem;
+	// width: 100%;
+	display: block;
 	max-width: 16.998rem;
-	width: 100%;
 
 	.__img {
 		display: block;
-		max-width: 17.998rem;
-		width: 17.998rem;
+		max-width: 16.998rem;
+		max-height: 16.998rem;
+		width: 100%;
 		height: auto;
+		object-fit: cover;
 		border-radius: 50%;
 		overflow: hidden;
 	} // .person-block .__img
