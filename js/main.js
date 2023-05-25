@@ -87,7 +87,6 @@ window.onload = function () {
 
 	clearAltTitle(".js-hta");
 
-	// ----
 	let wow = new WOW({
 		boxClass: "wow",
 		animateClass: "animated",
@@ -98,5 +97,4 @@ window.onload = function () {
 		scrollContainer: null,
 	});
 	wow.init();
-	// =======
 };

@@ -435,8 +435,7 @@ a {
 }
 
 .soc-info__row {
-  padding-top: 0.8rem;
-  padding-bottom: 0.4rem;
+  padding: 8px 0 4px;
 }
 
 .soc-links {
