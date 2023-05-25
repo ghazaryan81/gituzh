@@ -163,11 +163,13 @@ $animation-timing-function: (
 	ease-in: ease-in,
 	ease-out: ease-out,
 	ease-in-out: ease-in-out,
+	cubic-bezier-100: cubic-bezier(0.4, 0, 0.2, 1),
 );
 
 $animation-duration: (
 	duration-1600: 0.16s,
 	duration-2000: 0.2s,
+	duration-5000: 0.5s,
 	duration-7000: 0.7s,
 );
 
