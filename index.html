@@ -88,26 +88,53 @@
  <link href="img/fav/favicon.ico" rel="alternate icon"/>
  <link rel="mask-icon" href="img/fav/favicon-without-bg.svg" color="#ffffff"/>
  <link href="img/fav/favicon-with-bg.svg" rel="icon" type="image/svg+xml"/>
- 
-<link href="css/reset.css" rel="stylesheet" />
-<link href="css/styles.css" rel="stylesheet"/>
+ <link href="css/reset.css" rel="stylesheet" />
+ <link href="css/animate.css" rel="stylesheet"/>
+ <link href="css/styles.css" rel="stylesheet"/>
+
 </head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
 				<div class="section-fix">
 					<div class="header__content">
-						<a href="#" class="logo" title="gituzh">
+						<a href="#" class="logo js-hta" title="Գիտուժ նախաձեռնություն">
 							<img
 								alt="Գիտուժ նախաձեռնություն"
 								title="Գիտուժ նախաձեռնություն"
 								width="70"
 								height="65"
-								class="logo__img"
+								class="logo__img js-hta"
 								src="img/gituzh-logo-vector.svg"
+								decoding="async"
 							/>
 						</a>
 
+						<div class="container" onclick="this.classList.toggle('active')">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="70"
+								height="70"
+								viewBox="0 0 200 200"
+							>
+								<g stroke-width="6.5" stroke-linecap="round">
+									<path d="M72 82.286h28.75" fill-rule="evenodd" stroke="#5965d4" />
+									<path
+										d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+										fill="none"
+										stroke="#5965d4"
+									/>
+									<path d="M72 125.143h28.75" fill-rule="evenodd" stroke="#5965d4" />
+									<path
+										d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+										fill="none"
+										stroke="#5965d4"
+									/>
+									<path d="M100.75 82.286h28.75" fill-rule="evenodd" stroke="#5965d4" />
+									<path d="M100.75 125.143h28.75" fill-rule="evenodd" stroke="#5965d4" />
+								</g>
+							</svg>
+						</div>
 						<nav class="menu">
 							<ul class="menu__ul">
 								<li class="menu__li menu__li--current">
@@ -141,10 +168,11 @@
 			</header>
 
 			<main class="main">
-				<section class="page">
+				<section class="page dn">
 					<div class="section-fix">
 						<div class="page__content">
 							<h2 class="h1 h1--page">Լուրեր</h2>
+
 							<!-- media-listing -->
 							<div class="news-list">
 								<article class="news-article">
@@ -155,13 +183,12 @@
 											target="_blank"
 											rel="noreferrer noopener"
 										>
-											<i class="link-to link-to--for-news-article">
-												<svg class="icon icon--icon-link-to" width="60" height="60">
-													<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-												</svg>
-											</i>
-
 											<picture class="news-article__picture">
+												<i class="link-to link-to--for-news-article">
+													<svg class="icon icon--icon-link-to" width="60" height="60">
+														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
+													</svg>
+												</i>
 												<img
 													class="news-article__img js-hta"
 													srcset="
@@ -175,6 +202,7 @@
 													height="259"
 													alt="Գիտուժ նախաձեռնություն"
 													title="Գիտուժ նախաձեռնություն"
+													decoding="async"
 												/>
 											</picture>
 										</a>
@@ -198,12 +226,12 @@
 											target="_blank"
 											rel="noreferrer noopener"
 										>
-											<i class="link-to link-to--for-news-article">
-												<svg class="icon icon--icon-link-to" width="60" height="60">
-													<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-												</svg>
-											</i>
 											<picture class="news-article__picture">
+												<i class="link-to link-to--for-news-article">
+													<svg class="icon icon--icon-link-to" width="60" height="60">
+														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
+													</svg>
+												</i>
 												<img
 													class="news-article__img js-hta"
 													srcset="
@@ -217,6 +245,7 @@
 													height="259"
 													alt="Գիտուժ նախաձեռնություն"
 													title="Գիտուժ նախաձեռնություն"
+													decoding="async"
 												/>
 											</picture>
 										</a>
@@ -245,12 +274,12 @@
 											target="_blank"
 											rel="noreferrer noopener"
 										>
-											<i class="link-to link-to--for-news-article">
-												<svg class="icon icon--icon-link-to" width="60" height="60">
-													<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-												</svg>
-											</i>
 											<picture class="news-article__picture">
+												<i class="link-to link-to--for-news-article">
+													<svg class="icon icon--icon-link-to" width="60" height="60">
+														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
+													</svg>
+												</i>
 												<img
 													class="news-article__img js-hta"
 													srcset="
@@ -264,6 +293,7 @@
 													height="259"
 													alt="Գիտուժ նախաձեռնություն"
 													title="Գիտուժ նախաձեռնություն"
+													decoding="async"
 												/>
 											</picture>
 										</a>
@@ -293,12 +323,12 @@
 											target="_blank"
 											rel="noreferrer noopener"
 										>
-											<i class="link-to link-to--for-news-article">
-												<svg class="icon icon--icon-link-to" width="60" height="60">
-													<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-												</svg>
-											</i>
 											<picture class="news-article__picture">
+												<i class="link-to link-to--for-news-article">
+													<svg class="icon icon--icon-link-to" width="60" height="60">
+														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
+													</svg>
+												</i>
 												<img
 													class="news-article__img js-hta"
 													srcset="
@@ -312,6 +342,7 @@
 													height="259"
 													alt="Գիտուժ նախաձեռնություն"
 													title="Գիտուժ նախաձեռնություն"
+													decoding="async"
 												/>
 											</picture>
 										</a>
@@ -340,12 +371,12 @@
 											target="_blank"
 											rel="noreferrer noopener"
 										>
-											<i class="link-to link-to--for-news-article">
-												<svg class="icon icon--icon-link-to" width="60" height="60">
-													<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-												</svg>
-											</i>
 											<picture class="news-article__picture">
+												<i class="link-to link-to--for-news-article">
+													<svg class="icon icon--icon-link-to" width="60" height="60">
+														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
+													</svg>
+												</i>
 												<img
 													class="news-article__img js-hta"
 													srcset="
@@ -359,6 +390,7 @@
 													height="259"
 													alt="Գիտուժ նախաձեռնություն"
 													title="Գիտուժ նախաձեռնություն"
+													decoding="async"
 												/>
 											</picture>
 										</a>
@@ -387,12 +419,12 @@
 											target="_blank"
 											rel="noreferrer noopener"
 										>
-											<i class="link-to link-to--for-news-article">
-												<svg class="icon icon--icon-link-to" width="60" height="60">
-													<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-												</svg>
-											</i>
 											<picture class="news-article__picture">
+												<i class="link-to link-to--for-news-article">
+													<svg class="icon icon--icon-link-to" width="60" height="60">
+														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
+													</svg>
+												</i>
 												<img
 													class="news-article__img js-hta"
 													srcset="
@@ -406,6 +438,7 @@
 													height="259"
 													alt="Գիտուժ նախաձեռնություն"
 													title="Գիտուժ նախաձեռնություն"
+													decoding="async"
 												/>
 											</picture>
 										</a>
@@ -456,6 +489,7 @@
 									class="goal__img js-hta"
 									alt="Գիտուժ նախաձեռնություն"
 									title="Գիտուժ նախաձեռնություն"
+									decoding="async"
 								/>
 							</div>
 							<div class="goal__right">
@@ -610,6 +644,7 @@
 														height="481.42"
 														alt="Անահիտ Գալստյան. Բույսերի գենետիկան եւ ապրելու բարդ մեխանիզմները"
 														title="Անահիտ Գալստյան. Բույսերի գենետիկան եւ ապրելու բարդ մեխանիզմները"
+														decoding="async"
 													/>
 												</picture>
 											</a>
@@ -645,6 +680,7 @@
 														height="99.62"
 														alt="Գիտուժ նախաձեռնություն"
 														title="Գիտուժ նախաձեռնություն"
+														decoding="async"
 													/>
 												</picture>
 											</a>
@@ -694,6 +730,7 @@
 														height="99.62"
 														alt="Գիտուժ նախաձեռնություն"
 														title="Գիտուժ նախաձեռնություն"
+														decoding="async"
 													/>
 												</picture>
 											</a>
@@ -743,6 +780,7 @@
 														height="99.62"
 														alt="Գիտուժ նախաձեռնություն"
 														title="Գիտուժ նախաձեռնություն"
+														decoding="async"
 													/>
 												</picture>
 											</a>
@@ -790,6 +828,7 @@
 														height="99.62"
 														alt="Գիտուժ նախաձեռնություն"
 														title="Գիտուժ նախաձեռնություն"
+														decoding="async"
 													/>
 												</picture>
 											</a>
@@ -846,11 +885,11 @@
 								<div class="cell --r1">
 
         <div class="decor-icon decor-icon--about">
-         <img src="img/svg/decoration/orbit1.svg" class="decor-icon decor-icon--1 js-hta" alt="Գիտուժ նախաձեռնություն" title="Գիտուժ նախաձեռնություն" width="70.63" height="119.98" />
-         <img src="img/svg/decoration/orbit2.svg" class="decor-icon decor-icon--2 js-hta" alt="Գիտուժ նախաձեռնություն" title="Գիտուժ նախաձեռնություն" width="111.27" height="119.98" />
-         <img src="img/svg/decoration/orbit3.svg" class="decor-icon decor-icon--3 js-hta" alt="Գիտուժ նախաձեռնություն" title="Գիտուժ նախաձեռնություն" width="70.63" height="119.98" />
-         <img src="img/svg/decoration/orbit3.svg" class="decor-icon decor-icon--3 js-hta" alt="Գիտուժ նախաձեռնություն" title="Գիտուժ նախաձեռնություն" width="70.63" height="119.98" />
-         <img src="img/svg/decoration/orbit1.svg" class="decor-icon decor-icon--1 js-hta" alt="Գիտուժ նախաձեռնություն" title="Գիտուժ նախաձեռնություն" width="70.63" height="119.98" />
+         <img src="img/svg/decoration/orbit1.svg" class="decor-icon decor-icon--1 js-hta" alt="Գիտուժ նախաձեռնություն" title="Գիտուժ նախաձեռնություն" width="70.63" height="119.98" decoding="async" />
+         <img src="img/svg/decoration/orbit2.svg" class="decor-icon decor-icon--2 js-hta" alt="Գիտուժ նախաձեռնություն" title="Գիտուժ նախաձեռնություն" width="111.27" height="119.98" decoding="async" />
+         <img src="img/svg/decoration/orbit3.svg" class="decor-icon decor-icon--3 js-hta" alt="Գիտուժ նախաձեռնություն" title="Գիտուժ նախաձեռնություն" width="70.63" height="119.98" decoding="async" />
+         <img src="img/svg/decoration/orbit3.svg" class="decor-icon decor-icon--3 js-hta" alt="Գիտուժ նախաձեռնություն" title="Գիտուժ նախաձեռնություն" width="70.63" height="119.98" decoding="async" />
+         <img src="img/svg/decoration/orbit1.svg" class="decor-icon decor-icon--1 js-hta" alt="Գիտուժ նախաձեռնություն" title="Գիտուժ նախաձեռնություն" width="70.63" height="119.98" decoding="async" />
         </div>
 
 							</div>
@@ -884,6 +923,7 @@
 										width="273.4"
 										height="225.96"
 										class="about-image about-image--star js-hta"
+										decoding="async"
 									/>
 								</div>
 								<div class="cell --r1">
@@ -907,6 +947,7 @@
 										width="273.4"
 										height="225.96"
 										class="about-image about-image--telescope js-hta"
+										decoding="async"
 									/>
 								</div>
 								<div class="cell --r1">
@@ -933,6 +974,7 @@
 										width="273.4"
 										height="225.96"
 										class="about-image about-image--balance js-hta"
+										decoding="async"
 									/>
 								</div>
 								<div class="cell --r1">
@@ -2014,70 +2056,103 @@
 				</section>
 			</main>
 
-			<footer class="footer footer--spacer dn">
+			<footer class="footer footer--spacer">
 				<div class="section-fix">
 					<div class="footer__content">
 						<div class="contact-info">
-							Էլ.հասցե։ <strong>info@gituzh.org</strong><br />
-							Հեռ.: <strong>+374 (94) 87 83 00</strong>
+							<div class="contact-info__row">
+								Էլ.հասցե։ <strong>info@gituzh.org</strong>
+							</div>
+							<div class="contact-info__row">
+								Հեռ.: <strong>+374 (94) 87 83 00</strong>
+							</div>
 						</div>
+
+						<!-- prettier-ignore -->
+						<ul class="entity-links">
+       <li class="entity-links__li entity-links__li--current"><a href="#">Մեր մասին</a></li>
+       <li class="entity-links__li"><a href="#">Համայնք</a></li>
+       <li class="entity-links__li"><a href="#">Աջակիցներ</a></li>
+       <li class="entity-links__li"><a href="#">Լուրեր</a></li>
+       <li class="entity-links__li"><a href="#">FAQ</a></li>
+       <li class="entity-links__li"><a href="#">Պահանջ</a></li>
+       <li class="entity-links__li"><a href="#">Աջակցել</a></li>
+      </ul>
+
 						<div class="soc-info">
-							<div class="dt">Հետևի՛ր մեզ սոցիալական ցանցերում:</div>
-							<div class="soc-links soc-links--footer">
-								<a
-									href="https://www.facebook.com/gituzh.am/"
-									target="_blank"
-									class="soc-link soc-link--fb"
-									aria-label="Գիտուժ facebook"
-									rel="noreferrer noopener"
-								>
-									<svg class="icon icon--soc-fb" width="10" height="21">
-										<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-									</svg>
-								</a>
-								<a
-									href="https://www.linkedin.com/company/gituzh/"
-									target="_blank"
-									class="soc-link"
-									aria-label="Գիտուժ linkedin"
-									rel="noreferrer noopener"
-								>
-									<svg class="icon icon--soc-in" width="17.52" height="17.52">
-										<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-									</svg>
-								</a>
-								<a
-									href="https://twitter.com/gituzh"
-									target="_blank"
-									class="soc-link"
-									aria-label="Գիտուժ twitter"
-									rel="noreferrer noopener"
-								>
-									<svg class="icon icon--soc-tw" width="18.15" height="14.75">
-										<use xlink:href="img/svg/sprite.svg#icon-soc-tw"></use>
-									</svg>
-								</a>
-								<a
-									href="https://www.instagram.com/gituzh.am/"
-									target="_blank"
-									class="soc-link"
-									aria-label="Գիտուժ instagram"
-									rel="noreferrer noopener"
-								>
-									<svg class="icon icon--soc-inst" width="18.2" height="18.2">
-										<use xlink:href="img/svg/sprite.svg#icon-soc-inst"></use>
-									</svg>
-								</a>
+							<div class="soc-info__row">Հետևի՛ր մեզ սոցիալական ցանցերում:</div>
+							<div class="soc-info__row">
+								<div class="soc-links soc-links--footer">
+									<a
+										href="https://www.facebook.com/gituzh.am/"
+										target="_blank"
+										class="soc-link soc-link--fb"
+										aria-label="Գիտուժ facebook"
+										rel="noreferrer noopener"
+									>
+										<svg class="icon icon--soc-fb" width="10" height="21">
+											<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+										</svg>
+									</a>
+									<a
+										href="https://www.linkedin.com/company/gituzh/"
+										target="_blank"
+										class="soc-link"
+										aria-label="Գիտուժ linkedin"
+										rel="noreferrer noopener"
+									>
+										<svg class="icon icon--soc-in" width="17.52" height="17.52">
+											<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+										</svg>
+									</a>
+									<a
+										href="https://twitter.com/gituzh"
+										target="_blank"
+										class="soc-link"
+										aria-label="Գիտուժ twitter"
+										rel="noreferrer noopener"
+									>
+										<svg class="icon icon--soc-tw" width="18.15" height="14.75">
+											<use xlink:href="img/svg/sprite.svg#icon-soc-tw"></use>
+										</svg>
+									</a>
+									<a
+										href="https://www.instagram.com/gituzh.am/"
+										target="_blank"
+										class="soc-link"
+										aria-label="Գիտուժ instagram"
+										rel="noreferrer noopener"
+									>
+										<svg class="icon icon--soc-inst" width="18.2" height="18.2">
+											<use xlink:href="img/svg/sprite.svg#icon-soc-inst"></use>
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</footer>
+			<!-- progress-wrap -->
+			<div class="progress-wrap">
+				<svg
+					class="progress-circle svg-content"
+					width="100%"
+					height="100%"
+					viewBox="-1 -1 102 102"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+				>
+					<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+				</svg>
+			</div>
+			<!-- /progress-wrap -->
 		</div>
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/anime.min.js"></script>
 		<script src="js/countUp.min.js"></script>
+		<script src="js/wow.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

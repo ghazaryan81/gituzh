@@ -2,7 +2,9 @@
 $grid: (
 	xs: 32rem,
 	sm: 54rem,
+	md-sm: 50rem,
 	md: 72rem,
+	lg-sm: 77rem,
 	lg: 96rem,
 	xl: 144rem,
 );
@@ -153,6 +155,7 @@ $border-radius: (
 	radius-80: 8px,
 	radius-90: 9px,
 	radius-100: 10px,
+	radius-400: 40px,
 );
 
 $animation-timing-function: (
@@ -177,8 +180,10 @@ $easy: ();
 
 $xs: map.get($grid, xs);
 $sm: map.get($grid, sm);
+$md-sm: map.get($grid, md-sm);
 $md: map.get($grid, md);
 $lg: map.get($grid, lg);
+$lg-sm: map.get($grid, lg-sm);
 $xl: map.get($grid, xl);
 
 :root {
