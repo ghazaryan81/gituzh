@@ -44,6 +44,8 @@ window.onload = function () {
 	};
 
 	// prettier-ignore
+
+	if (document.querySelector(".active-persons") && document.querySelector(".active-fund")) {
 	const activePersons = new CountUp( "active-persons", 0, 170, 0, 3.5, options );
 	const activeFund = new CountUp("active-fund", 0, 20, 0, 2.0, options);
 	let start = true;
@@ -56,6 +58,7 @@ window.onload = function () {
 			// console.log(window.scrollY);
 		}
 	});
+}
 
 	const clearAltTitle = (className) => {
 		const htaElem = document.querySelectorAll(className);

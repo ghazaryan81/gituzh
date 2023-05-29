@@ -28,7 +28,8 @@ $color: (
 	blue-6: (174, 182, 249),  // color: #aeb6f9;
  blue-7: (240, 241, 255),  // color: #f0f1ff;
  blue-8: (238, 239, 247),  // color: #f3f5fb;
- white-1: (255, 255, 255), // color: #fff;
+ blue-9: (34, 60, 80),     // color: #223c50
+ white-1: (255, 255, 255), // color: #fff
 );
 
 $font-size: (
@@ -41,13 +42,15 @@ $font-size: (
 	fs-160: 1.6rem,
 	fs-170: 1.7rem,
 	fs-180: 1.8rem,
+	fs-184: 1.84rem,
 	fs-190: 1.9rem,
 	fs-200: 2rem,
 	fs-210: 2.1rem,
 	fs-220: 2.2rem,
 	fs-240: 2.4rem,
-	fs-260: 2.6rem,
 	fs-250: 2.5rem,
+	fs-260: 2.6rem,
+	fs-270: 2.7rem,
 	fs-290: 2.9rem,
 	fs-300: 3rem,
 	fs-310: 3.1rem,
@@ -178,8 +181,6 @@ $global: (
 	global-font-size-reduce: 62.5%,
 	global-min-width: 200px,
 );
-
-$easy: ();
 
 $xs: map.get($grid, xs);
 $sm: map.get($grid, sm);

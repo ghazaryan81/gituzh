@@ -1,0 +1,496 @@
+@mixin props() {
+	a {
+		&:visited,
+		&:link {
+			color: inherit;
+			text-decoration: underline;
+			cursor: auto;
+			&:active {
+				color: inherit;
+			} // @mixin props() a:link:active
+		} // @mixin props() a:link
+	} // @mixin props() a
+
+	address {
+		display: block;
+		font-style: italic;
+	} // @mixin props() address
+
+	aside,
+	article {
+		display: block;
+	} // @mixin props() article
+
+	b {
+		font-weight: 700;
+	} // @mixin props() b
+
+	bdo {
+		unicode-bidi: bidi-override;
+	} // @mixin props() bdo
+
+	blockquote {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		margin-left: 4rem;
+		margin-right: 4rem;
+	} // @mixin props() blockquote
+
+	html,
+	body {
+		display: block;
+	} // @mixin props() body
+
+	body {
+		margin: 0.8rem;
+		&:focus {
+			outline: none;
+		} // @mixin props() body:focus
+	} // @mixin props() body
+
+	html {
+		&:focus {
+			outline: none;
+		} // @mixin props() html:focus
+	} // @mixin props() html
+
+	caption {
+		display: table-caption;
+		text-align: center;
+	} // @mixin props() caption
+
+	cite {
+		font-style: italic;
+	} // @mixin props() cite
+
+	code {
+		font-family: monospace;
+	} // @mixin props() code
+
+	col {
+		display: table-column;
+	} // @mixin props() col
+
+	colgroup {
+		display: table-column-group;
+	} // @mixin props() colgroup
+
+	datalist {
+		display: none;
+	} // @mixin props() datalist
+
+	dd {
+		display: block;
+		margin-left: 4rem;
+	} // @mixin props() dd
+
+	del {
+		text-decoration: line-through;
+	} // @mixin props() del
+
+	details {
+		display: block;
+	} // @mixin props() details
+
+	dfn {
+		font-style: italic;
+	} // @mixin props() dfn
+
+	div {
+		display: block;
+	} // @mixin props() div
+
+	dl {
+		display: block;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: 0;
+		margin-right: 0;
+	} // @mixin props() dl
+
+	dt {
+		display: block;
+	} // @mixin props() dt
+
+	em {
+		font-style: italic;
+	} // @mixin props() em
+
+	embed {
+		&:focus {
+			outline: none;
+		} // @mixin props() embed:focus
+	} // @mixin props() embed
+
+	fieldset {
+		display: block;
+		margin-left: 0.2rem;
+		margin-right: 0.2rem;
+		padding-top: 0.35rem;
+		padding-bottom: 0.625rem;
+		padding-left: 0.75rem;
+		padding-right: 0.75rem;
+		border: 2px groove inherit;
+	} // @mixin props() fieldset
+
+	figcaption {
+		display: block;
+	} // @mixin props() figcaption
+
+	figure {
+		display: block;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		margin-left: 4rem;
+		margin-right: 4rem;
+	} // @mixin props() figure
+
+	footer {
+		display: block;
+	} // @mixin props() footer
+
+	form {
+		display: block;
+		margin-top: 0;
+	} // @mixin props() form
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+		font-weight: 700;
+	} // @mixin props() h6
+
+	h1 {
+		font-size: 2rem;
+		margin-top: 0.67rem;
+		margin-bottom: 0.67rem;
+	} // @mixin props() h1
+
+	h2 {
+		font-size: 1.5rem;
+		margin-top: 0.83rem;
+		margin-bottom: 0.83rem;
+	} // @mixin props() h2
+
+	h3 {
+		font-size: 1.17rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	} // @mixin props() h3
+
+	h4 {
+		margin-top: 1.33rem;
+		margin-bottom: 1.33rem;
+	} // @mixin props() h4
+
+	h5 {
+		font-size: 0.83rem;
+		margin-top: 1.67rem;
+		margin-bottom: 1.67rem;
+	} // @mixin props() h5
+
+	h6 {
+		font-size: 0.67rem;
+		margin-top: 2.33rem;
+		margin-bottom: 2.33rem;
+	} // @mixin props() h6
+
+	header {
+		display: block;
+	} // @mixin props() header
+
+	hr {
+		display: block;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+		margin-left: auto;
+		margin-right: auto;
+		border-style: inset;
+		border-width: 1px;
+	} // @mixin props() hr
+
+	i {
+		font-style: italic;
+	} // @mixin props() i
+	iframe {
+		&:focus {
+			outline: none;
+		} // @mixin props() iframe:focus
+		[seamless] {
+			display: block;
+		} // @mixin props() iframe [seamless]
+	} // @mixin props() iframe
+	img {
+		display: inline-block;
+	} // @mixin props() img
+
+	ins {
+		text-decoration: underline;
+	} // @mixin props() ins
+
+	kbd {
+		font-family: monospace;
+	} // @mixin props() kbd
+
+	label {
+		cursor: default;
+	} // @mixin props() label
+
+	legend {
+		display: block;
+		padding-left: 2px;
+		padding-right: 2px;
+		border: none;
+	} // @mixin props() legend
+
+	li {
+		display: list-item;
+	} // @mixin props() li
+
+	script,
+	link {
+		display: none;
+	} // @mixin props() link
+
+	map {
+		display: inline;
+	} // @mixin props() map
+
+	mark {
+		background-color: yellow;
+		color: black;
+	} // @mixin props() mark
+
+	menu {
+		display: block;
+		list-style-type: disc;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 4rem;
+	} // @mixin props() menu
+
+	nav {
+		display: block;
+	} // @mixin props() nav
+
+	object {
+		&:focus {
+			outline: none;
+		} // @mixin props() object:focus
+	} // @mixin props() object
+
+	ol {
+		display: block;
+		list-style-type: decimal;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 4rem;
+	} // @mixin props() ol
+
+	output {
+		display: inline;
+	} // @mixin props() output
+
+	p {
+		display: block;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		margin-left: 0;
+		margin-right: 0;
+	} // @mixin props() p
+
+	param {
+		display: none;
+	} // @mixin props() param
+
+	pre {
+		display: block;
+		font-family: monospace;
+		white-space: pre;
+		margin: 1rem 0;
+	} // @mixin props() pre
+
+	q {
+		display: inline;
+		&::before {
+			content: open-quote;
+		} // @mixin props() q::before
+		q::after {
+			content: close-quote;
+		} // @mixin props() q q::after
+	} // @mixin props() q
+
+	rt {
+		line-height: normal;
+	} // @mixin props() rt
+
+	s {
+		text-decoration: line-through;
+	} // @mixin props() s
+
+	samp {
+		font-family: monospace;
+	} // @mixin props() samp
+
+	section {
+		display: block;
+	} // @mixin props() section
+
+	small {
+		font-size: smaller;
+	} // @mixin props() small
+
+	strike {
+		text-decoration: line-through;
+	} // @mixin props() strike
+
+	strong {
+		font-weight: 700;
+	} // @mixin props() strong
+
+	style {
+		display: none;
+	} // @mixin props() style
+
+	sub {
+		vertical-align: sub;
+		font-size: smaller;
+	} // @mixin props() sub
+
+	summary {
+		display: block;
+	} // @mixin props() summary
+
+	sup {
+		vertical-align: super;
+		font-size: smaller;
+	} // @mixin props() sup
+
+	table {
+		display: table;
+		border-collapse: separate;
+		border-spacing: 2px;
+		border-color: gray;
+	} // @mixin props() table
+
+	tbody {
+		display: table-row-group;
+		vertical-align: middle;
+		border-color: inherit;
+	} // @mixin props() tbody
+
+	td {
+		display: table-cell;
+		vertical-align: inherit;
+	} // @mixin props() td
+
+	tfoot {
+		display: table-footer-group;
+		vertical-align: middle;
+		border-color: inherit;
+	} // @mixin props() tfoot
+
+	th {
+		display: table-cell;
+		vertical-align: inherit;
+		font-weight: bold;
+		text-align: center;
+	} // @mixin props() th
+
+	thead {
+		display: table-header-group;
+		vertical-align: middle;
+		border-color: inherit;
+	} // @mixin props() thead
+
+	title {
+		display: none;
+	} // @mixin props() title
+
+	tr {
+		display: table-row;
+		vertical-align: inherit;
+		border-color: inherit;
+	} // @mixin props() tr
+
+	u {
+		text-decoration: underline;
+	} // @mixin props() u
+
+	ul {
+		display: block;
+		list-style-type: disc;
+		margin-top: 1em;
+		margin-bottom: 1 em;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 40px;
+	} // @mixin props() ul
+
+	var {
+		font-style: italic;
+	} // @mixin props() var
+} // @mixin props()
+
+@mixin some-props() {
+	ul,
+	ol,
+	p,
+	h1,
+	h2 {
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+	} // @mixin some-props() h2
+
+	h1,
+	h2 {
+		font-weight: 700;
+	} // @mixin some-props() h2
+
+	ul {
+		display: block;
+		list-style-type: disc;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding-left: 4rem;
+	} // @mixin some-props() ul
+
+	ol {
+		list-style-type: decimal;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding-left: 4rem;
+	} // @mixin some-props() ol
+
+	li {
+		display: list-item;
+	} // @mixin some-props() li
+
+	p {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	} // @mixin some-props() p
+
+	h1 {
+		font-size: 2rem;
+		margin-top: 0.67rem;
+		margin-bottom: 0.67rem;
+	} // @mixin some-props() h1
+
+	h2 {
+		font-size: 1.5rem;
+		margin-top: 0.83rem;
+		margin-bottom: 0.83rem;
+	} // @mixin some-props() h2
+} // @mixin some-props()
