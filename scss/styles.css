@@ -349,9 +349,6 @@ a {
   will-change: font, color;
   white-space: nowrap;
 }
-.menu a--current, .menu a:hover {
-  color: rgb(var(--blue-1)) !important;
-}
 .menu .current-menu-item a, .menu__li--current a {
   font-weight: var(--fw-700);
   color: rgb(var(--blue-1));
@@ -596,7 +593,8 @@ a {
   line-height: clamp(var(--lh-220), 2.7777777778vw, var(--lh-400));
 }
 .description--about {
-  font-size: clamp(var(--fs-160), 2.0833333333vw, var(--fs-220));
+  letter-spacing: calc(clamp(var(--ls-100), 0.1111111111vw, var(--ls-1600)) * -1);
+  font-size: clamp(var(--fs-160), 2.0833333333vw, var(--fs-300));
 }
 .description--goal {
   font-size: clamp(var(--fs-160), 1.8055555556vw, var(--fs-260));
@@ -1289,7 +1287,6 @@ a {
 }
 .persons__content {
   padding: clamp(2.1rem, 2.8472222222vw, 4.1rem) clamp(3.2rem, 8.6111111111vw, 12.4rem);
-  padding-bottom: 200px;
 }
 
 .persons-list {
@@ -1758,7 +1755,6 @@ a {
 .entity-links li.current-menu-item a, .entity-links li--current a, .entity-links__li.current-menu-item a, .entity-links__li--current a {
   color: rgb(var(--blue-1));
   background-color: rgba(var(--white-1), 1);
-  color: rgb(var(--blue-1)) !important;
 }
 @media screen and (max-width: 50rem) {
   .entity-links {
@@ -1795,12 +1791,7 @@ a {
 
 .burger-container {
   cursor: pointer;
-  display: none;
-}
-@media screen and (max-width: 54rem) {
-  .burger-container {
-    display: flex;
-  }
+  display: flex;
 }
 .burger-container svg {
   transition: transform var(--duration-5000) var(--cubic-bezier-100);
@@ -1915,21 +1906,4 @@ a {
 
 .bg-none {
   background-color: none;
-}
-
-.scroll-content {
-  display: block !important;
-}
-
-.js-smooth-scrollbar {
-  width: 100% !important;
-  height: 100% !important;
-  overflow: hidden !important;
-}
-
-body,
-html {
-  position: fixed !important;
-  width: 100% !important;
-  height: 100% !important;
 }/*# sourceMappingURL=styles.css.map */

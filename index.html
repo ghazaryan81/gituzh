@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hy">
-	<!-- prettier-ignore -->
-	<head>
+  <!-- prettier-ignore -->
+  <head>
 	<meta charset="utf-8"/>
 	<!-- <base href="."/> -->
 	<title>Գիտուժ նախաձեռնություն</title>
@@ -93,796 +93,921 @@
  <link href="css/styles.css" rel="stylesheet"/>
 
 </head>
-	<body>
-		<div class="wrapper">
-			<header class="header">
-				<div class="section-fix">
-					<div class="header__content">
-						<a href="#" class="logo js-hta" title="Գիտուժ նախաձեռնություն">
-							<img
-								alt="Գիտուժ նախաձեռնություն"
-								title="Գիտուժ նախաձեռնություն"
-								width="70"
-								height="65"
-								class="logo__img js-hta"
-								src="img/gituzh-logo-vector.svg"
-								decoding="async"
-							/>
-						</a>
+  <body class="js-smooth-scrollbar">
+    <div class="wrapper">
+      <header class="header">
+        <div class="section-fix">
+          <div class="header__content">
+            <a href="#" class="logo js-hta" title="Գիտուժ նախաձեռնություն">
+              <img
+                alt="Գիտուժ նախաձեռնություն"
+                title="Գիտուժ նախաձեռնություն"
+                width="70"
+                height="65"
+                class="logo__img js-hta"
+                src="img/gituzh-logo-vector.svg"
+                decoding="async"
+              />
+            </a>
 
-						<div class="burger-container" onclick="this.classList.toggle('active')">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="70"
-								height="70"
-								viewBox="0 0 200 200"
-							>
-								<g stroke-width="6.5" stroke-linecap="round">
-									<path d="M72 82.286h28.75" fill-rule="evenodd" stroke="#5965d4" />
-									<path
-										d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
-										fill="none"
-										stroke="#5965d4"
-									/>
-									<path d="M72 125.143h28.75" fill-rule="evenodd" stroke="#5965d4" />
-									<path
-										d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
-										fill="none"
-										stroke="#5965d4"
-									/>
-									<path d="M100.75 82.286h28.75" fill-rule="evenodd" stroke="#5965d4" />
-									<path d="M100.75 125.143h28.75" fill-rule="evenodd" stroke="#5965d4" />
-								</g>
-							</svg>
-						</div>
-						<nav class="menu">
-							<ul class="menu__ul">
-								<li class="menu__li menu__li--current">
-									<a href="#">ՄԵՐ ՄԱՍԻՆ</a>
-								</li>
-								<li class="menu__li">
-									<a href="#">ՀԱՄԱՅՆՔ</a>
-								</li>
-								<li class="menu__li">
-									<a href="#">ԱՋԱԿԻՑՆԵՐ</a>
-								</li>
-								<li class="menu__li">
-									<a href="#">FAQ</a>
-								</li>
-							</ul>
-						</nav>
+            <div
+              class="burger-container"
+              onclick="this.classList.toggle('active')"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="70"
+                height="70"
+                viewBox="0 0 200 200"
+              >
+                <g stroke-width="6.5" stroke-linecap="round">
+                  <path
+                    d="M72 82.286h28.75"
+                    fill-rule="evenodd"
+                    stroke="#5965d4"
+                  />
+                  <path
+                    d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                    fill="none"
+                    stroke="#5965d4"
+                  />
+                  <path
+                    d="M72 125.143h28.75"
+                    fill-rule="evenodd"
+                    stroke="#5965d4"
+                  />
+                  <path
+                    d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                    fill="none"
+                    stroke="#5965d4"
+                  />
+                  <path
+                    d="M100.75 82.286h28.75"
+                    fill-rule="evenodd"
+                    stroke="#5965d4"
+                  />
+                  <path
+                    d="M100.75 125.143h28.75"
+                    fill-rule="evenodd"
+                    stroke="#5965d4"
+                  />
+                </g>
+              </svg>
+            </div>
+            <nav class="menu">
+              <ul class="menu__ul">
+                <li class="menu__li menu__li--current">
+                  <a href="#">ՄԵՐ ՄԱՍԻՆ</a>
+                </li>
+                <li class="menu__li">
+                  <a href="#">ՀԱՄԱՅՆՔ</a>
+                </li>
+                <li class="menu__li">
+                  <a href="#">ԱՋԱԿԻՑՆԵՐ</a>
+                </li>
+                <li class="menu__li">
+                  <a href="#">FAQ</a>
+                </li>
+              </ul>
+            </nav>
 
-						<div class="group group--btn-langs">
-							<a href="#" class="btn btn--support">
-								<span class="txt-label">ԱՋԱԿՑԵԼ</span>
-							</a>
+            <div class="group group--btn-langs">
+              <a href="#" class="btn btn--support">
+                <span class="txt-label">ԱՋԱԿՑԵԼ</span>
+              </a>
 
-							<span class="langs">
-								<a href="#" class="lang lang--current lang--hy">ՀԱՅ</a>
-								<i class="text-divider">|</i>
-								<a href="#" class="lang lang--en">ENG</a>
-							</span>
-						</div>
-					</div>
-				</div>
-			</header>
+              <span class="langs">
+                <a href="#" class="lang lang--current lang--hy">ՀԱՅ</a>
+                <i class="text-divider">|</i>
+                <a href="#" class="lang lang--en">ENG</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
 
-			<main class="main">
-				<section class="page dn">
-					<div class="section-fix">
-						<div class="page__content">
-							<h2 class="h1 h1--page">Լուրեր</h2>
+      <main class="main">
+        <section class="info dn">
+          <div class="section-fix">
+            <div class="info__content">
+              <div class="info__content-group">
+                <h1 class="h1 js-gsap-txt">
+                  Գիտուժ<br />
+                  նախաձեռնություն
+                </h1>
+                <p class="description description--about js-typo-intro-2">
+                  Հայաստանում գիտական Էկոհամակարգի զարգացմանն ու գիտության
+                  հանրայնացմանն աջակցող Նախաձեռնություն
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-							<!-- media-listing -->
-							<div class="news-list">
-								<article class="news-article">
-									<figure class="news-article__figure">
-										<a
-											href="#"
-											class="news-article__link"
-											target="_blank"
-											rel="noreferrer noopener"
-										>
-											<picture class="news-article__picture">
-												<i class="link-to link-to--for-news-article">
-													<svg class="icon icon--icon-link-to" width="60" height="60">
-														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-													</svg>
-												</i>
-												<img
-													class="news-article__img js-hta"
-													srcset="
-														img/tmp/news/1-1x.jpg 1x,
-														img/tmp/news/1-2x.jpg 2x,
-														img/tmp/news/1-3x.jpg 3x,
-														img/tmp/news/1-4x.jpg 4x
-													"
-													src="img/tmp/news/1-2x.jpg"
-													width="460"
-													height="259"
-													alt="Գիտուժ նախաձեռնություն"
-													title="Գիտուժ նախաձեռնություն"
-													decoding="async"
-												/>
-											</picture>
-										</a>
-									</figure>
-									<div class="news-article__descr">
-										<div class="group">
-											<h2 class="news-article__title">
-												<a href="#" class="news-article__title-link">
-													10 միֆ գիտության և գիտնականի մասին
-												</a>
-											</h2>
-										</div>
-									</div>
-								</article>
+        <section class="page dn">
+          <div class="section-fix">
+            <div class="page__content">
+              <h2 class="h1 h1--page">Լուրեր</h2>
 
-								<article class="news-article">
-									<figure class="news-article__figure">
-										<a
-											href="#"
-											class="news-article__link"
-											target="_blank"
-											rel="noreferrer noopener"
-										>
-											<picture class="news-article__picture">
-												<i class="link-to link-to--for-news-article">
-													<svg class="icon icon--icon-link-to" width="60" height="60">
-														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-													</svg>
-												</i>
-												<img
-													class="news-article__img js-hta"
-													srcset="
-														img/tmp/news/2-1x.jpg 1x,
-														img/tmp/news/2-2x.jpg 2x,
-														img/tmp/news/2-3x.jpg 3x,
-														img/tmp/news/2-4x.jpg 4x
-													"
-													src="img/tmp/news/2-2x.jpg"
-													width="460"
-													height="259"
-													alt="Գիտուժ նախաձեռնություն"
-													title="Գիտուժ նախաձեռնություն"
-													decoding="async"
-												/>
-											</picture>
-										</a>
-									</figure>
-									<div class="news-article__descr">
-										<div class="group">
-											<h2 class="news-article__title">
-												<a
-													href="#"
-													class="news-article__title-link"
-													target="_blank"
-													rel="noreferrer noopener"
-												>
-													Անահիտ Գալստյան. Բույսերի գենետիկան եւ ապրելու բարդ մեխանիզմները
-												</a>
-											</h2>
-										</div>
-									</div>
-								</article>
+              <!-- media-listing -->
+              <div class="news-list">
+                <article class="news-article">
+                  <figure class="news-article__figure">
+                    <a
+                      href="#"
+                      class="news-article__link"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <picture class="news-article__picture">
+                        <i class="link-to link-to--for-news-article">
+                          <svg
+                            class="icon icon--icon-link-to"
+                            width="60"
+                            height="60"
+                          >
+                            <use
+                              xlink:href="img/svg/sprite.svg#icon-link-to"
+                            ></use>
+                          </svg>
+                        </i>
+                        <img
+                          class="news-article__img js-hta"
+                          srcset="
+                            img/tmp/news/1-1x.jpg 1x,
+                            img/tmp/news/1-2x.jpg 2x,
+                            img/tmp/news/1-3x.jpg 3x,
+                            img/tmp/news/1-4x.jpg 4x
+                          "
+                          src="img/tmp/news/1-2x.jpg"
+                          width="460"
+                          height="259"
+                          alt="Գիտուժ նախաձեռնություն"
+                          title="Գիտուժ նախաձեռնություն"
+                          decoding="async"
+                        />
+                      </picture>
+                    </a>
+                  </figure>
+                  <div class="news-article__descr">
+                    <div class="group">
+                      <h2 class="news-article__title">
+                        <a href="#" class="news-article__title-link">
+                          10 միֆ գիտության և գիտնականի մասին
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
 
-								<article class="news-article">
-									<figure class="news-article__figure">
-										<a
-											href="#"
-											class="news-article__link"
-											target="_blank"
-											rel="noreferrer noopener"
-										>
-											<picture class="news-article__picture">
-												<i class="link-to link-to--for-news-article">
-													<svg class="icon icon--icon-link-to" width="60" height="60">
-														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-													</svg>
-												</i>
-												<img
-													class="news-article__img js-hta"
-													srcset="
-														img/tmp/news/3-1x.jpg 1x,
-														img/tmp/news/3-2x.jpg 2x,
-														img/tmp/news/3-3x.jpg 3x,
-														img/tmp/news/3-4x.jpg 4x
-													"
-													src="img/tmp/news/3-2x.jpg"
-													width="460"
-													height="259"
-													alt="Գիտուժ նախաձեռնություն"
-													title="Գիտուժ նախաձեռնություն"
-													decoding="async"
-												/>
-											</picture>
-										</a>
-									</figure>
-									<div class="news-article__descr">
-										<div class="group">
-											<h2 class="news-article__title">
-												<a
-													href="#"
-													class="news-article__title-link"
-													target="_blank"
-													rel="noreferrer noopener"
-												>
-													Կրթության զարգացումը միայն անվտանգության համար չէ․ Արամ Փախչանյանի
-													և Արեգ Դանագուլյանի զրույցը
-												</a>
-											</h2>
-										</div>
-									</div>
-								</article>
+                <article class="news-article">
+                  <figure class="news-article__figure">
+                    <a
+                      href="#"
+                      class="news-article__link"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <picture class="news-article__picture">
+                        <i class="link-to link-to--for-news-article">
+                          <svg
+                            class="icon icon--icon-link-to"
+                            width="60"
+                            height="60"
+                          >
+                            <use
+                              xlink:href="img/svg/sprite.svg#icon-link-to"
+                            ></use>
+                          </svg>
+                        </i>
+                        <img
+                          class="news-article__img js-hta"
+                          srcset="
+                            img/tmp/news/2-1x.jpg 1x,
+                            img/tmp/news/2-2x.jpg 2x,
+                            img/tmp/news/2-3x.jpg 3x,
+                            img/tmp/news/2-4x.jpg 4x
+                          "
+                          src="img/tmp/news/2-2x.jpg"
+                          width="460"
+                          height="259"
+                          alt="Գիտուժ նախաձեռնություն"
+                          title="Գիտուժ նախաձեռնություն"
+                          decoding="async"
+                        />
+                      </picture>
+                    </a>
+                  </figure>
+                  <div class="news-article__descr">
+                    <div class="group">
+                      <h2 class="news-article__title">
+                        <a
+                          href="#"
+                          class="news-article__title-link"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          Անահիտ Գալստյան. Բույսերի գենետիկան եւ ապրելու բարդ
+                          մեխանիզմները
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
 
-								<article class="news-article">
-									<figure class="news-article__figure">
-										<a
-											href="#"
-											class="news-article__link"
-											target="_blank"
-											rel="noreferrer noopener"
-										>
-											<picture class="news-article__picture">
-												<i class="link-to link-to--for-news-article">
-													<svg class="icon icon--icon-link-to" width="60" height="60">
-														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-													</svg>
-												</i>
-												<img
-													class="news-article__img js-hta"
-													srcset="
-														img/tmp/news/4-1x.jpg 1x,
-														img/tmp/news/4-2x.jpg 2x,
-														img/tmp/news/4-3x.jpg 3x,
-														img/tmp/news/4-4x.jpg 4x
-													"
-													src="img/tmp/news/4-2x.jpg"
-													width="460"
-													height="259"
-													alt="Գիտուժ նախաձեռնություն"
-													title="Գիտուժ նախաձեռնություն"
-													decoding="async"
-												/>
-											</picture>
-										</a>
-									</figure>
-									<div class="news-article__descr">
-										<div class="group">
-											<h2 class="news-article__title">
-												<a
-													href="#"
-													class="news-article__title-link"
-													target="_blank"
-													rel="noreferrer noopener"
-												>
-													Գեւորգ Եղիկյան. Քաղաքային գիտնականն ու դինամիկ զարգացումը
-												</a>
-											</h2>
-										</div>
-									</div>
-								</article>
+                <article class="news-article">
+                  <figure class="news-article__figure">
+                    <a
+                      href="#"
+                      class="news-article__link"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <picture class="news-article__picture">
+                        <i class="link-to link-to--for-news-article">
+                          <svg
+                            class="icon icon--icon-link-to"
+                            width="60"
+                            height="60"
+                          >
+                            <use
+                              xlink:href="img/svg/sprite.svg#icon-link-to"
+                            ></use>
+                          </svg>
+                        </i>
+                        <img
+                          class="news-article__img js-hta"
+                          srcset="
+                            img/tmp/news/3-1x.jpg 1x,
+                            img/tmp/news/3-2x.jpg 2x,
+                            img/tmp/news/3-3x.jpg 3x,
+                            img/tmp/news/3-4x.jpg 4x
+                          "
+                          src="img/tmp/news/3-2x.jpg"
+                          width="460"
+                          height="259"
+                          alt="Գիտուժ նախաձեռնություն"
+                          title="Գիտուժ նախաձեռնություն"
+                          decoding="async"
+                        />
+                      </picture>
+                    </a>
+                  </figure>
+                  <div class="news-article__descr">
+                    <div class="group">
+                      <h2 class="news-article__title">
+                        <a
+                          href="#"
+                          class="news-article__title-link"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          Կրթության զարգացումը միայն անվտանգության համար չէ․
+                          Արամ Փախչանյանի և Արեգ Դանագուլյանի զրույցը
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
 
-								<article class="news-article">
-									<figure class="news-article__figure">
-										<a
-											href="#"
-											class="news-article__link"
-											target="_blank"
-											rel="noreferrer noopener"
-										>
-											<picture class="news-article__picture">
-												<i class="link-to link-to--for-news-article">
-													<svg class="icon icon--icon-link-to" width="60" height="60">
-														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-													</svg>
-												</i>
-												<img
-													class="news-article__img js-hta"
-													srcset="
-														img/tmp/news/5-1x.jpg 1x,
-														img/tmp/news/5-2x.jpg 2x,
-														img/tmp/news/5-3x.jpg 3x,
-														img/tmp/news/5-4x.jpg 4x
-													"
-													src="img/tmp/news/5-2x.jpg"
-													width="460"
-													height="259"
-													alt="Գիտուժ նախաձեռնություն"
-													title="Գիտուժ նախաձեռնություն"
-													decoding="async"
-												/>
-											</picture>
-										</a>
-									</figure>
-									<div class="news-article__descr">
-										<div class="group">
-											<h2 class="news-article__title">
-												<a
-													href="#"
-													class="news-article__title-link"
-													target="_blank"
-													rel="noreferrer noopener"
-												>
-													Գիտությունից՝ բիզնես․ Ի՞նչ է Technology Transfer Center-ը
-												</a>
-											</h2>
-										</div>
-									</div>
-								</article>
+                <article class="news-article">
+                  <figure class="news-article__figure">
+                    <a
+                      href="#"
+                      class="news-article__link"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <picture class="news-article__picture">
+                        <i class="link-to link-to--for-news-article">
+                          <svg
+                            class="icon icon--icon-link-to"
+                            width="60"
+                            height="60"
+                          >
+                            <use
+                              xlink:href="img/svg/sprite.svg#icon-link-to"
+                            ></use>
+                          </svg>
+                        </i>
+                        <img
+                          class="news-article__img js-hta"
+                          srcset="
+                            img/tmp/news/4-1x.jpg 1x,
+                            img/tmp/news/4-2x.jpg 2x,
+                            img/tmp/news/4-3x.jpg 3x,
+                            img/tmp/news/4-4x.jpg 4x
+                          "
+                          src="img/tmp/news/4-2x.jpg"
+                          width="460"
+                          height="259"
+                          alt="Գիտուժ նախաձեռնություն"
+                          title="Գիտուժ նախաձեռնություն"
+                          decoding="async"
+                        />
+                      </picture>
+                    </a>
+                  </figure>
+                  <div class="news-article__descr">
+                    <div class="group">
+                      <h2 class="news-article__title">
+                        <a
+                          href="#"
+                          class="news-article__title-link"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          Գեւորգ Եղիկյան. Քաղաքային գիտնականն ու դինամիկ
+                          զարգացումը
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
 
-								<article class="news-article">
-									<figure class="news-article__figure">
-										<a
-											href="#"
-											class="news-article__link"
-											target="_blank"
-											rel="noreferrer noopener"
-										>
-											<picture class="news-article__picture">
-												<i class="link-to link-to--for-news-article">
-													<svg class="icon icon--icon-link-to" width="60" height="60">
-														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-													</svg>
-												</i>
-												<img
-													class="news-article__img js-hta"
-													srcset="
-														img/tmp/news/6-1x.jpg 1x,
-														img/tmp/news/6-2x.jpg 2x,
-														img/tmp/news/6-3x.jpg 3x,
-														img/tmp/news/6-4x.jpg 4x
-													"
-													src="img/tmp/news/6-2x.jpg"
-													width="460"
-													height="259"
-													alt="Գիտուժ նախաձեռնություն"
-													title="Գիտուժ նախաձեռնություն"
-													decoding="async"
-												/>
-											</picture>
-										</a>
-									</figure>
-									<div class="news-article__descr">
-										<div class="group">
-											<h2 class="news-article__title">
-												<a
-													href="#"
-													class="news-article__title-link"
-													target="_blank"
-													rel="noreferrer noopener"
-												>
-													Երկար զրույց գիտության շուրջ [10]. Անահիտ Հովհաննիսյան | Լևոն
-													Եպիսկոպոսյան
-												</a>
-											</h2>
-										</div>
-									</div>
-								</article>
-							</div>
-							<!-- /media-listing -->
-						</div>
-					</div>
-				</section>
+                <article class="news-article">
+                  <figure class="news-article__figure">
+                    <a
+                      href="#"
+                      class="news-article__link"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <picture class="news-article__picture">
+                        <i class="link-to link-to--for-news-article">
+                          <svg
+                            class="icon icon--icon-link-to"
+                            width="60"
+                            height="60"
+                          >
+                            <use
+                              xlink:href="img/svg/sprite.svg#icon-link-to"
+                            ></use>
+                          </svg>
+                        </i>
+                        <img
+                          class="news-article__img js-hta"
+                          srcset="
+                            img/tmp/news/5-1x.jpg 1x,
+                            img/tmp/news/5-2x.jpg 2x,
+                            img/tmp/news/5-3x.jpg 3x,
+                            img/tmp/news/5-4x.jpg 4x
+                          "
+                          src="img/tmp/news/5-2x.jpg"
+                          width="460"
+                          height="259"
+                          alt="Գիտուժ նախաձեռնություն"
+                          title="Գիտուժ նախաձեռնություն"
+                          decoding="async"
+                        />
+                      </picture>
+                    </a>
+                  </figure>
+                  <div class="news-article__descr">
+                    <div class="group">
+                      <h2 class="news-article__title">
+                        <a
+                          href="#"
+                          class="news-article__title-link"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          Գիտությունից՝ բիզնես․ Ի՞նչ է Technology Transfer
+                          Center-ը
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
 
-				<section class="info dn">
-					<div class="section-fix">
-						<div class="info__content">
-							<div class="info__content-group">
-								<h1 class="h1 js-typo-intro">Գիտուժ նախաձեռնություն</h1>
-								<p class="description description--about js-typo-intro-2">
-									Հայաստանում գիտական Էկոհամակարգի զարգացմանն ու գիտության հանրայնացմանն
-									աջակցող Նախաձեռնություն
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
+                <article class="news-article">
+                  <figure class="news-article__figure">
+                    <a
+                      href="#"
+                      class="news-article__link"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <picture class="news-article__picture">
+                        <i class="link-to link-to--for-news-article">
+                          <svg
+                            class="icon icon--icon-link-to"
+                            width="60"
+                            height="60"
+                          >
+                            <use
+                              xlink:href="img/svg/sprite.svg#icon-link-to"
+                            ></use>
+                          </svg>
+                        </i>
+                        <img
+                          class="news-article__img js-hta"
+                          srcset="
+                            img/tmp/news/6-1x.jpg 1x,
+                            img/tmp/news/6-2x.jpg 2x,
+                            img/tmp/news/6-3x.jpg 3x,
+                            img/tmp/news/6-4x.jpg 4x
+                          "
+                          src="img/tmp/news/6-2x.jpg"
+                          width="460"
+                          height="259"
+                          alt="Գիտուժ նախաձեռնություն"
+                          title="Գիտուժ նախաձեռնություն"
+                          decoding="async"
+                        />
+                      </picture>
+                    </a>
+                  </figure>
+                  <div class="news-article__descr">
+                    <div class="group">
+                      <h2 class="news-article__title">
+                        <a
+                          href="#"
+                          class="news-article__title-link"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                        >
+                          Երկար զրույց գիտության շուրջ [10]. Անահիտ Հովհաննիսյան
+                          | Լևոն Եպիսկոպոսյան
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <!-- /media-listing -->
+            </div>
+          </div>
+        </section>
 
-				<section class="goal dn">
-					<div class="section-fix">
-						<div class="goal__content">
-							<div class="goal__left">
-								<img
-									src="img/svg/decoration/goal.svg"
-									width="292.46"
-									class="goal__img js-hta"
-									alt="Գիտուժ նախաձեռնություն"
-									title="Գիտուժ նախաձեռնություն"
-									decoding="async"
-								/>
-							</div>
-							<div class="goal__right">
-								<div class="goal__info">
-									<p class="description description--goal">
-										ՀՆԱ-ի 1%-ը ներդնել գիտության և տեխնոլոգիաների մեջ՝ պետության
-										կարիքներից ու նպատակներից բխող ԳՀՓԿ աշխատանքների պետական պատվերի
-										համակարգ ստեղծելու և դրա շարունակական զարգացումն ապահովելու համար։
-									</p>
-									<a
-										href="#"
-										class="default-link"
-										target="_blank"
-										rel="noreferrer noopener"
-										>Ինչո՞ւ է սա կարևոր։</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+        <section class="goal dn">
+          <div class="section-fix">
+            <div class="goal__content">
+              <div class="goal__left">
+                <img
+                  src="img/svg/decoration/goal.svg"
+                  width="292.46"
+                  class="goal__img js-hta"
+                  alt="Գիտուժ նախաձեռնություն"
+                  title="Գիտուժ նախաձեռնություն"
+                  decoding="async"
+                />
+              </div>
+              <div class="goal__right">
+                <div class="goal__info">
+                  <p class="description description--goal">
+                    ՀՆԱ-ի 1%-ը ներդնել գիտության և տեխնոլոգիաների մեջ՝ պետության
+                    կարիքներից ու նպատակներից բխող ԳՀՓԿ աշխատանքների պետական
+                    պատվերի համակարգ ստեղծելու և դրա շարունակական զարգացումն
+                    ապահովելու համար։
+                  </p>
+                  <a
+                    href="#"
+                    class="default-link"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Ինչո՞ւ է սա կարևոր։</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-				<section class="indicator dn">
-					<div class="section-fix">
-						<div class="indicator__content">
-							<div class="indicator__content-top">
-								<div class="arrs-group arrs-group--1">
-									<svg
-										class="icon icon--arr-to-bottom-right"
-										width="44.76"
-										height="43.14"
-									>
-										<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-									</svg>
-									<svg
-										class="icon icon--arr-to-bottom-right"
-										width="44.76"
-										height="43.14"
-									>
-										<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-									</svg>
-									<svg
-										class="icon icon--arr-to-bottom-right"
-										width="44.76"
-										height="43.14"
-									>
-										<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-									</svg>
-								</div>
-								<div class="arrs-group arrs-group--2">
-									<svg
-										class="icon icon--arr-to-bottom-left"
-										width="44.76"
-										height="43.14"
-									>
-										<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-left"></use>
-									</svg>
-									<svg
-										class="icon icon--arr-to-bottom-left"
-										width="44.76"
-										height="43.14"
-									>
-										<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-left"></use>
-									</svg>
-									<svg
-										class="icon icon--arr-to-bottom-left"
-										width="44.76"
-										height="43.14"
-									>
-										<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-left"></use>
-									</svg>
-								</div>
-							</div>
-							<div class="indicator__content-middle">
-								<div class="indicator__content-middle-left">
-									<h2 class="h2 js-typo-intro">Գիտուժ համայնք</h2>
-								</div>
-								<div class="indicator__content-middle-right">
-									<!--  -->
-									<div class="count">
-										<span class="count__value"
-											><span id="active-persons">170</span>+</span
-										>
-										<div class="count__label">ձեռներեց ու գործարար</div>
-									</div>
-									<div class="count">
-										<span class="count__value"><span id="active-fund">20</span>+</span>
-										<div class="count__label">միություն ու հիմնադրամ</div>
-									</div>
-									<!--  -->
-								</div>
-							</div>
-							<div class="indicator__content-bottom">
-								<div class="arrs-group arrs-group--3">
-									<svg class="icon icon--arr-to-top-right" width="44.76" height="43.14">
-										<use xlink:href="img/svg/sprite.svg#icon-arr-to-top-right"></use>
-									</svg>
-									<svg class="icon icon--arr-to-top-right" width="44.76" height="43.14">
-										<use xlink:href="img/svg/sprite.svg#icon-arr-to-top-right"></use>
-									</svg>
-									<svg class="icon icon--arr-to-top-right" width="44.76" height="43.14">
-										<use xlink:href="img/svg/sprite.svg#icon-arr-to-top-right"></use>
-									</svg>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+        <section class="indicator dn">
+          <div class="section-fix">
+            <div class="indicator__content">
+              <div class="indicator__content-top">
+                <div class="arrs-group arrs-group--1">
+                  <svg
+                    class="icon icon--arr-to-bottom-right"
+                    width="44.76"
+                    height="43.14"
+                  >
+                    <use
+                      xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                    ></use>
+                  </svg>
+                  <svg
+                    class="icon icon--arr-to-bottom-right"
+                    width="44.76"
+                    height="43.14"
+                  >
+                    <use
+                      xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                    ></use>
+                  </svg>
+                  <svg
+                    class="icon icon--arr-to-bottom-right"
+                    width="44.76"
+                    height="43.14"
+                  >
+                    <use
+                      xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="arrs-group arrs-group--2">
+                  <svg
+                    class="icon icon--arr-to-bottom-left"
+                    width="44.76"
+                    height="43.14"
+                  >
+                    <use
+                      xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-left"
+                    ></use>
+                  </svg>
+                  <svg
+                    class="icon icon--arr-to-bottom-left"
+                    width="44.76"
+                    height="43.14"
+                  >
+                    <use
+                      xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-left"
+                    ></use>
+                  </svg>
+                  <svg
+                    class="icon icon--arr-to-bottom-left"
+                    width="44.76"
+                    height="43.14"
+                  >
+                    <use
+                      xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-left"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="indicator__content-middle">
+                <div class="indicator__content-middle-left">
+                  <h2 class="h2 js-typo-intro">Գիտուժ համայնք</h2>
+                </div>
+                <div class="indicator__content-middle-right">
+                  <!--  -->
+                  <div class="count">
+                    <span class="count__value"
+                      ><span id="active-persons">170</span>+</span
+                    >
+                    <div class="count__label">ձեռներեց ու գործարար</div>
+                  </div>
+                  <div class="count">
+                    <span class="count__value"
+                      ><span id="active-fund">20</span>+</span
+                    >
+                    <div class="count__label">միություն ու հիմնադրամ</div>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <div class="indicator__content-bottom">
+                <div class="arrs-group arrs-group--3">
+                  <svg
+                    class="icon icon--arr-to-top-right"
+                    width="44.76"
+                    height="43.14"
+                  >
+                    <use
+                      xlink:href="img/svg/sprite.svg#icon-arr-to-top-right"
+                    ></use>
+                  </svg>
+                  <svg
+                    class="icon icon--arr-to-top-right"
+                    width="44.76"
+                    height="43.14"
+                  >
+                    <use
+                      xlink:href="img/svg/sprite.svg#icon-arr-to-top-right"
+                    ></use>
+                  </svg>
+                  <svg
+                    class="icon icon--arr-to-top-right"
+                    width="44.76"
+                    height="43.14"
+                  >
+                    <use
+                      xlink:href="img/svg/sprite.svg#icon-arr-to-top-right"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-				<section class="media dn">
-					<div class="section-fix">
-						<div class="media__content">
-							<div class="cols --media --title">
-								<div class="__1">
-									<h2 class="h2">Lուրեր</h2>
-								</div>
-								<div class="__2"></div>
-							</div>
+        <section class="media dn">
+          <div class="section-fix">
+            <div class="media__content">
+              <div class="cols --media --title">
+                <div class="__1">
+                  <h2 class="h2">Lուրեր</h2>
+                </div>
+                <div class="__2"></div>
+              </div>
 
-							<div class="cols --media --content">
-								<div class="__1">
-									<article class="media-article-cover">
-										<figure class="media-article-cover__figure">
-											<a
-												href="#"
-												class="media-article-cover__link"
-												target="_blank"
-												rel="noreferrer noopener"
-											>
-												<i class="link-to link-to--for-media-article-cover">
-													<svg class="icon icon--icon-link-to" width="60" height="60">
-														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-													</svg>
-												</i>
+              <div class="cols --media --content">
+                <div class="__1">
+                  <article class="media-article-cover">
+                    <figure class="media-article-cover__figure">
+                      <a
+                        href="#"
+                        class="media-article-cover__link"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <i class="link-to link-to--for-media-article-cover">
+                          <svg
+                            class="icon icon--icon-link-to"
+                            width="60"
+                            height="60"
+                          >
+                            <use
+                              xlink:href="img/svg/sprite.svg#icon-link-to"
+                            ></use>
+                          </svg>
+                        </i>
 
-												<figcaption class="media-article-cover__figcaption">
-													<h3 class="media-article-cover__title">
-														Անահիտ Գալստյան. Բույսերի գենետիկան եւ ապրելու բարդ մեխանիզմները
-													</h3>
-												</figcaption>
-												<picture class="media-article-cover__picture">
-													<img
-														class="media-article-cover__img js-hta"
-														srcset="
-															img/tmp/lab-1-1x.jpg 1x,
-															img/tmp/lab-1-2x.jpg 2x,
-															img/tmp/lab-1-3x.jpg 3x,
-															img/tmp/lab-1-4x.jpg 4x
-														"
-														src="img/tmp/lab-1-2x.jpg"
-														width="771.74"
-														height="481.42"
-														alt="Անահիտ Գալստյան. Բույսերի գենետիկան եւ ապրելու բարդ մեխանիզմները"
-														title="Անահիտ Գալստյան. Բույսերի գենետիկան եւ ապրելու բարդ մեխանիզմները"
-														decoding="async"
-													/>
-												</picture>
-											</a>
-										</figure>
-									</article>
-								</div>
-								<div class="__2">
-									<article class="media-article">
-										<figure class="media-article__figure">
-											<a
-												href="#"
-												class="media-article__link"
-												target="_blank"
-												rel="noreferrer noopener"
-											>
-												<i class="link-to link-to--for-media-article">
-													<svg class="icon icon--icon-link-to" width="60" height="60">
-														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-													</svg>
-												</i>
+                        <figcaption class="media-article-cover__figcaption">
+                          <h3 class="media-article-cover__title">
+                            Անահիտ Գալստյան. Բույսերի գենետիկան եւ ապրելու բարդ
+                            մեխանիզմները
+                          </h3>
+                        </figcaption>
+                        <picture class="media-article-cover__picture">
+                          <img
+                            class="media-article-cover__img js-hta"
+                            srcset="
+                              img/tmp/lab-1-1x.jpg 1x,
+                              img/tmp/lab-1-2x.jpg 2x,
+                              img/tmp/lab-1-3x.jpg 3x,
+                              img/tmp/lab-1-4x.jpg 4x
+                            "
+                            src="img/tmp/lab-1-2x.jpg"
+                            width="771.74"
+                            height="481.42"
+                            alt="Անահիտ Գալստյան. Բույսերի գենետիկան եւ ապրելու բարդ մեխանիզմները"
+                            title="Անահիտ Գալստյան. Բույսերի գենետիկան եւ ապրելու բարդ մեխանիզմները"
+                            decoding="async"
+                          />
+                        </picture>
+                      </a>
+                    </figure>
+                  </article>
+                </div>
+                <div class="__2">
+                  <article class="media-article">
+                    <figure class="media-article__figure">
+                      <a
+                        href="#"
+                        class="media-article__link"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <i class="link-to link-to--for-media-article">
+                          <svg
+                            class="icon icon--icon-link-to"
+                            width="60"
+                            height="60"
+                          >
+                            <use
+                              xlink:href="img/svg/sprite.svg#icon-link-to"
+                            ></use>
+                          </svg>
+                        </i>
 
-												<picture class="media-article__picture">
-													<img
-														class="media-article__img js-hta"
-														srcset="
-															img/tmp/lab-2-1x.jpg 1x,
-															img/tmp/lab-2-2x.jpg 2x,
-															img/tmp/lab-2-3x.jpg 3x,
-															img/tmp/lab-2-4x.jpg 4x
-														"
-														src="img/tmp/lab-2-2x.jpg"
-														width="139.16"
-														height="99.62"
-														alt="Գիտուժ նախաձեռնություն"
-														title="Գիտուժ նախաձեռնություն"
-														decoding="async"
-													/>
-												</picture>
-											</a>
-										</figure>
-										<div class="media-article__descr">
-											<div class="group">
-												<h3 class="media-article__title">
-													<strong>
-														Կրթության զարգացումը միայն անվտանգության համար չէ․
-													</strong>
-													Արամ Փախչանյանի և Արեգ Դանագուլյանի զրույցը
-												</h3>
-												<a
-													href="#"
-													class="media-article__details-link"
-													target="_blank"
-													rel="noreferrer noopener"
-													>Կարդալ ավելին</a
-												>
-											</div>
-										</div>
-									</article>
-									<article class="media-article">
-										<figure class="media-article__figure">
-											<a
-												href="#"
-												class="media-article__link"
-												target="_blank"
-												rel="noreferrer noopener"
-											>
-												<i class="link-to link-to--for-media-article">
-													<svg class="icon icon--icon-link-to" width="60" height="60">
-														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-													</svg>
-												</i>
-												<picture class="media-article__picture">
-													<img
-														class="media-article__img js-hta"
-														srcset="
-															img/tmp/lab-3-1x.jpg 1x,
-															img/tmp/lab-3-2x.jpg 2x,
-															img/tmp/lab-3-3x.jpg 3x,
-															img/tmp/lab-3-4x.jpg 4x
-														"
-														src="img/tmp/lab-3-2x.jpg"
-														width="139.16"
-														height="99.62"
-														alt="Գիտուժ նախաձեռնություն"
-														title="Գիտուժ նախաձեռնություն"
-														decoding="async"
-													/>
-												</picture>
-											</a>
-										</figure>
-										<div class="media-article__descr">
-											<div class="group">
-												<h3 class="media-article__title">
-													<strong>
-														Կրթության զարգացումը միայն անվտանգության համար չէ․
-													</strong>
-													Արամ Փախչանյանի և Արեգ Դանագուլյանի զրույցը
-												</h3>
-												<a
-													href="#"
-													class="media-article__details-link"
-													target="_blank"
-													rel="noreferrer noopener"
-													>Կարդալ ավելին</a
-												>
-											</div>
-										</div>
-									</article>
-									<article class="media-article">
-										<figure class="media-article__figure">
-											<a
-												href="#"
-												class="media-article__link"
-												target="_blank"
-												rel="noreferrer noopener"
-											>
-												<i class="link-to link-to--for-media-article">
-													<svg class="icon icon--icon-link-to" width="60" height="60">
-														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-													</svg>
-												</i>
-												<picture class="media-article__picture">
-													<img
-														class="media-article__img js-hta"
-														srcset="
-															img/tmp/lab-4-1x.jpg 1x,
-															img/tmp/lab-4-2x.jpg 2x,
-															img/tmp/lab-4-3x.jpg 3x,
-															img/tmp/lab-4-4x.jpg 4x
-														"
-														src="img/tmp/lab-4-2x.jpg"
-														width="139.16"
-														height="99.62"
-														alt="Գիտուժ նախաձեռնություն"
-														title="Գիտուժ նախաձեռնություն"
-														decoding="async"
-													/>
-												</picture>
-											</a>
-										</figure>
-										<div class="media-article__descr">
-											<div class="group">
-												<h3 class="media-article__title">
-													<strong>Անահիտ Գալստյան. </strong>
-													Բույսերի գենետիկան եւ ապրելու բարդ մեխանիզմները
-												</h3>
-												<a
-													href="#"
-													class="media-article__details-link"
-													target="_blank"
-													rel="noreferrer noopener"
-													>Կարդալ ավելին</a
-												>
-											</div>
-										</div>
-									</article>
-									<article class="media-article">
-										<figure class="media-article__figure">
-											<a
-												href="#"
-												class="media-article__link"
-												target="_blank"
-												rel="noreferrer noopener"
-											>
-												<i class="link-to link-to--for-media-article">
-													<svg class="icon icon--icon-link-to" width="60" height="60">
-														<use xlink:href="img/svg/sprite.svg#icon-link-to"></use>
-													</svg>
-												</i>
-												<picture class="media-article__picture">
-													<img
-														class="media-article__img js-hta"
-														srcset="
-															img/tmp/lab-5-1x.jpg 1x,
-															img/tmp/lab-5-2x.jpg 2x,
-															img/tmp/lab-5-3x.jpg 3x,
-															img/tmp/lab-5-4x.jpg 4x
-														"
-														src="img/tmp/lab-5-2x.jpg"
-														width="139.16"
-														height="99.62"
-														alt="Գիտուժ նախաձեռնություն"
-														title="Գիտուժ նախաձեռնություն"
-														decoding="async"
-													/>
-												</picture>
-											</a>
-										</figure>
-										<div class="media-article__descr">
-											<div class="group">
-												<h3 class="media-article__title">
-													<strong>
-														Կրթության զարգացումը միայն անվտանգության համար չէ․
-													</strong>
-													Արամ Փախչանյանի և Արեգ Դանագուլյանի զրույցը
-												</h3>
-												<a
-													href="#"
-													class="media-article__details-link"
-													target="_blank"
-													rel="noreferrer noopener"
-													>Կարդալ ավելին</a
-												>
-											</div>
-										</div>
-									</article>
-								</div>
-							</div>
-							<!-- /content -->
+                        <picture class="media-article__picture">
+                          <img
+                            class="media-article__img js-hta"
+                            srcset="
+                              img/tmp/lab-2-1x.jpg 1x,
+                              img/tmp/lab-2-2x.jpg 2x,
+                              img/tmp/lab-2-3x.jpg 3x,
+                              img/tmp/lab-2-4x.jpg 4x
+                            "
+                            src="img/tmp/lab-2-2x.jpg"
+                            width="139.16"
+                            height="99.62"
+                            alt="Գիտուժ նախաձեռնություն"
+                            title="Գիտուժ նախաձեռնություն"
+                            decoding="async"
+                          />
+                        </picture>
+                      </a>
+                    </figure>
+                    <div class="media-article__descr">
+                      <div class="group">
+                        <h3 class="media-article__title">
+                          <strong>
+                            Կրթության զարգացումը միայն անվտանգության համար չէ․
+                          </strong>
+                          Արամ Փախչանյանի և Արեգ Դանագուլյանի զրույցը
+                        </h3>
+                        <a
+                          href="#"
+                          class="media-article__details-link"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >Կարդալ ավելին</a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media-article">
+                    <figure class="media-article__figure">
+                      <a
+                        href="#"
+                        class="media-article__link"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <i class="link-to link-to--for-media-article">
+                          <svg
+                            class="icon icon--icon-link-to"
+                            width="60"
+                            height="60"
+                          >
+                            <use
+                              xlink:href="img/svg/sprite.svg#icon-link-to"
+                            ></use>
+                          </svg>
+                        </i>
+                        <picture class="media-article__picture">
+                          <img
+                            class="media-article__img js-hta"
+                            srcset="
+                              img/tmp/lab-3-1x.jpg 1x,
+                              img/tmp/lab-3-2x.jpg 2x,
+                              img/tmp/lab-3-3x.jpg 3x,
+                              img/tmp/lab-3-4x.jpg 4x
+                            "
+                            src="img/tmp/lab-3-2x.jpg"
+                            width="139.16"
+                            height="99.62"
+                            alt="Գիտուժ նախաձեռնություն"
+                            title="Գիտուժ նախաձեռնություն"
+                            decoding="async"
+                          />
+                        </picture>
+                      </a>
+                    </figure>
+                    <div class="media-article__descr">
+                      <div class="group">
+                        <h3 class="media-article__title">
+                          <strong>
+                            Կրթության զարգացումը միայն անվտանգության համար չէ․
+                          </strong>
+                          Արամ Փախչանյանի և Արեգ Դանագուլյանի զրույցը
+                        </h3>
+                        <a
+                          href="#"
+                          class="media-article__details-link"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >Կարդալ ավելին</a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media-article">
+                    <figure class="media-article__figure">
+                      <a
+                        href="#"
+                        class="media-article__link"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <i class="link-to link-to--for-media-article">
+                          <svg
+                            class="icon icon--icon-link-to"
+                            width="60"
+                            height="60"
+                          >
+                            <use
+                              xlink:href="img/svg/sprite.svg#icon-link-to"
+                            ></use>
+                          </svg>
+                        </i>
+                        <picture class="media-article__picture">
+                          <img
+                            class="media-article__img js-hta"
+                            srcset="
+                              img/tmp/lab-4-1x.jpg 1x,
+                              img/tmp/lab-4-2x.jpg 2x,
+                              img/tmp/lab-4-3x.jpg 3x,
+                              img/tmp/lab-4-4x.jpg 4x
+                            "
+                            src="img/tmp/lab-4-2x.jpg"
+                            width="139.16"
+                            height="99.62"
+                            alt="Գիտուժ նախաձեռնություն"
+                            title="Գիտուժ նախաձեռնություն"
+                            decoding="async"
+                          />
+                        </picture>
+                      </a>
+                    </figure>
+                    <div class="media-article__descr">
+                      <div class="group">
+                        <h3 class="media-article__title">
+                          <strong>Անահիտ Գալստյան. </strong>
+                          Բույսերի գենետիկան եւ ապրելու բարդ մեխանիզմները
+                        </h3>
+                        <a
+                          href="#"
+                          class="media-article__details-link"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >Կարդալ ավելին</a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                  <article class="media-article">
+                    <figure class="media-article__figure">
+                      <a
+                        href="#"
+                        class="media-article__link"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <i class="link-to link-to--for-media-article">
+                          <svg
+                            class="icon icon--icon-link-to"
+                            width="60"
+                            height="60"
+                          >
+                            <use
+                              xlink:href="img/svg/sprite.svg#icon-link-to"
+                            ></use>
+                          </svg>
+                        </i>
+                        <picture class="media-article__picture">
+                          <img
+                            class="media-article__img js-hta"
+                            srcset="
+                              img/tmp/lab-5-1x.jpg 1x,
+                              img/tmp/lab-5-2x.jpg 2x,
+                              img/tmp/lab-5-3x.jpg 3x,
+                              img/tmp/lab-5-4x.jpg 4x
+                            "
+                            src="img/tmp/lab-5-2x.jpg"
+                            width="139.16"
+                            height="99.62"
+                            alt="Գիտուժ նախաձեռնություն"
+                            title="Գիտուժ նախաձեռնություն"
+                            decoding="async"
+                          />
+                        </picture>
+                      </a>
+                    </figure>
+                    <div class="media-article__descr">
+                      <div class="group">
+                        <h3 class="media-article__title">
+                          <strong>
+                            Կրթության զարգացումը միայն անվտանգության համար չէ․
+                          </strong>
+                          Արամ Փախչանյանի և Արեգ Դանագուլյանի զրույցը
+                        </h3>
+                        <a
+                          href="#"
+                          class="media-article__details-link"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          >Կարդալ ավելին</a
+                        >
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <!-- /content -->
 
-							<!-- content -->
-							<div class="cols --media --btn">
-								<div class="__1">
-									<a
-										href="#"
-										class="btn btn--support"
-										target="_blank"
-										rel="noreferrer noopener"
-									>
-										<span class="txt-label">ԱՎԵԼԻՆ</span>
-									</a>
-								</div>
-								<div class="__2"></div>
-							</div>
-							<!-- /content -->
-						</div>
-					</div>
-				</section>
+              <!-- content -->
+              <div class="cols --media --btn">
+                <div class="__1">
+                  <a
+                    href="#"
+                    class="btn btn--support"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <span class="txt-label">ԱՎԵԼԻՆ</span>
+                  </a>
+                </div>
+                <div class="__2"></div>
+              </div>
+              <!-- /content -->
+            </div>
+          </div>
+        </section>
 
-				<section class="about dn">
-					<div class="section-fix">
-						<div class="about__content">
-							<div class="grid-c-r2 --about --1">
-								<div class="cell --c">
-									<h1 class="h1 --about">Մեր մասին</h1>
-								</div>
-								<!-- prettier-ignore -->
-								<div class="cell --r1">
+        <section class="about dn">
+          <div class="section-fix">
+            <div class="about__content">
+              <div class="grid-c-r2 --about --1">
+                <div class="cell --c">
+                  <h2 class="h1 --about">Մեր մասին</h2>
+                </div>
+                <!-- prettier-ignore -->
+                <div class="cell --r1">
 
         <div class="decor-icon decor-icon--about">
          <img src="img/svg/decoration/orbit1.svg" class="decor-icon decor-icon--1 js-hta" alt="Գիտուժ նախաձեռնություն" title="Գիտուժ նախաձեռնություն" width="70.63" height="119.98" decoding="async" />
@@ -893,217 +1018,273 @@
         </div>
 
 							</div>
-								<div class="cell --r2">
-									<p class="description description--about description--about-space">
-										«Գիտուժը» հանրային նախաձեռնություն է, որը ձևավորվել է 2021 թվականին։
-										Այս պահին ավելի քան 170 ընկերությունների հիմնադիրներ և ձեռներեցներ,
-										ինչպես նաև 21 ասոցիացիաներ ու հիմնադրամներ տեխնոլոգիական, բիզնես և այլ
-										համայնքներից միավորվել են «Գիտուժ»-ի օրակարգի շուրջ: Նշենք, որ
-										համայնքը շարունակում է անընդհատ մեծանալ։
-									</p>
-									<p class="description description--about description--about-space">
-										Գիտուժի օրակարգը բյուրեղացված է մեր առաքելության և տեսլականի մեջ։
-									</p>
-									<p class="description description--about description--about-space">
-										Գիտության/ԳՀՓԿ քաղաքականության մշակման, պետական հատկացումների
-										ավելացման, ինչպես նաև գիտության հանրահռչակման համար Գիտուժի ջանքերը
-										խթան են հանդիսացել Հայաստանում վերջին 3 տասնամյակների ընթացքում
-										աննախադեպ մի շարք առաջընթացների և կառուցողական գործընթացների համար:
-									</p>
-								</div>
-							</div>
+                <div class="cell --r2">
+                  <p
+                    class="description description--about description--about-space"
+                  >
+                    «Գիտուժը» հանրային նախաձեռնություն է, որը ձևավորվել է 2021
+                    թվականին։ Այս պահին ավելի քան 170 ընկերությունների
+                    հիմնադիրներ և ձեռներեցներ, ինչպես նաև 21 ասոցիացիաներ ու
+                    հիմնադրամներ տեխնոլոգիական, բիզնես և այլ համայնքներից
+                    միավորվել են «Գիտուժ»-ի օրակարգի շուրջ: Նշենք, որ համայնքը
+                    շարունակում է անընդհատ մեծանալ։
+                  </p>
+                  <p
+                    class="description description--about description--about-space"
+                  >
+                    Գիտուժի օրակարգը բյուրեղացված է մեր առաքելության և տեսլականի
+                    մեջ։
+                  </p>
+                  <p
+                    class="description description--about description--about-space"
+                  >
+                    Գիտության/ԳՀՓԿ քաղաքականության մշակման, պետական
+                    հատկացումների ավելացման, ինչպես նաև գիտության հանրահռչակման
+                    համար Գիտուժի ջանքերը խթան են հանդիսացել Հայաստանում վերջին
+                    3 տասնամյակների ընթացքում աննախադեպ մի շարք առաջընթացների և
+                    կառուցողական գործընթացների համար:
+                  </p>
+                </div>
+              </div>
 
-							<!--  -->
-							<div class="grid-c-r2 --about --2">
-								<div class="cell --c">
-									<img
-										src="img/svg/decoration/star.svg"
-										alt="Գիտուժ նախաձեռնություն"
-										title="Գիտուժ նախաձեռնություն"
-										width="273.4"
-										height="225.96"
-										class="about-image about-image--star js-hta"
-										decoding="async"
-									/>
-								</div>
-								<div class="cell --r1">
-									<h2 class="h2 h2--about h2--about-spacer">Առաքելություն</h2>
-								</div>
-								<div class="cell --r2">
-									<p class="description description--about description--about-space">
-										Հզորացնել Հայաստանը գիտության և տեխնոլոգիաների միջոցով։
-									</p>
-								</div>
-							</div>
-							<!--  -->
+              <!--  -->
+              <div class="grid-c-r2 --about --2">
+                <div class="cell --c">
+                  <img
+                    src="img/svg/decoration/star.svg"
+                    alt="Գիտուժ նախաձեռնություն"
+                    title="Գիտուժ նախաձեռնություն"
+                    width="273.4"
+                    height="225.96"
+                    class="about-image about-image--star js-hta"
+                    decoding="async"
+                  />
+                </div>
+                <div class="cell --r1">
+                  <h2 class="h2 h2--about h2--about-spacer">Առաքելություն</h2>
+                </div>
+                <div class="cell --r2">
+                  <p
+                    class="description description--about description--about-space"
+                  >
+                    Հզորացնել Հայաստանը գիտության և տեխնոլոգիաների միջոցով։
+                  </p>
+                </div>
+              </div>
+              <!--  -->
 
-							<!--  -->
-							<div class="grid-c-r2 --about --3">
-								<div class="cell --c">
-									<img
-										src="img/svg/decoration/telescope.svg"
-										alt="Գիտուժ նախաձեռնություն"
-										title="Գիտուժ նախաձեռնություն"
-										width="273.4"
-										height="225.96"
-										class="about-image about-image--telescope js-hta"
-										decoding="async"
-									/>
-								</div>
-								<div class="cell --r1">
-									<h2 class="h2 h2--about h2--about-spacer">Տեսլական</h2>
-								</div>
-								<div class="cell --r2">
-									<p class="description description--about description--about-space">
-										Հայաստանի Հանրապետությունում ձևավորվել է հզոր ու  ճկուն գիտական և ԳՀՓԿ
-										էկոհամակարգ, որը լուծում է մեր երկրի առջև ծառացած մարտահրավերներն ու
-										խնդիրները, խթանում է տնտեսության ու հասարակության շարունակական
-										զարգացումը և արժեք է տալիս աշխարհին։
-									</p>
-								</div>
-							</div>
-							<!--  -->
+              <!--  -->
+              <div class="grid-c-r2 --about --3">
+                <div class="cell --c">
+                  <img
+                    src="img/svg/decoration/telescope.svg"
+                    alt="Գիտուժ նախաձեռնություն"
+                    title="Գիտուժ նախաձեռնություն"
+                    width="273.4"
+                    height="225.96"
+                    class="about-image about-image--telescope js-hta"
+                    decoding="async"
+                  />
+                </div>
+                <div class="cell --r1">
+                  <h2 class="h2 h2--about h2--about-spacer">Տեսլական</h2>
+                </div>
+                <div class="cell --r2">
+                  <p
+                    class="description description--about description--about-space"
+                  >
+                    Հայաստանի Հանրապետությունում ձևավորվել է հզոր ու  ճկուն
+                    գիտական և ԳՀՓԿ էկոհամակարգ, որը լուծում է մեր երկրի առջև
+                    ծառացած մարտահրավերներն ու խնդիրները, խթանում է տնտեսության
+                    ու հասարակության շարունակական զարգացումը և արժեք է տալիս
+                    աշխարհին։
+                  </p>
+                </div>
+              </div>
+              <!--  -->
 
-							<!--  -->
-							<div class="grid-c-r2 --about --4">
-								<div class="cell --c">
-									<img
-										src="img/svg/decoration/balance.svg"
-										alt="Գիտուժ նախաձեռնություն"
-										title="Գիտուժ նախաձեռնություն"
-										width="273.4"
-										height="225.96"
-										class="about-image about-image--balance js-hta"
-										decoding="async"
-									/>
-								</div>
-								<div class="cell --r1">
-									<h2 class="h2 h2--about h2--about-spacer">Արժեքներ</h2>
-								</div>
-								<div class="cell --r2">
-									<ul class="description description--about values-list">
-										<li class="__it">
-											<svg class="icon icon--tringle-next" width="15.74" height="15.74">
-												<use xlink:href="img/svg/sprite.svg#icon-tringle-next"></use>
-											</svg>
-											Առաքելությանը հավատարիմ
-										</li>
-										<li class="__it">
-											<svg class="icon icon--tringle-next" width="15.74" height="15.74">
-												<use xlink:href="img/svg/sprite.svg#icon-tringle-next"></use>
-											</svg>
-											Ճշմարտասեր
-										</li>
-										<li class="__it">
-											<svg class="icon icon--tringle-next" width="15.74" height="15.74">
-												<use xlink:href="img/svg/sprite.svg#icon-tringle-next"></use>
-											</svg>
-											Համախմբող
-										</li>
-										<li class="__it">
-											<svg class="icon icon--tringle-next" width="15.74" height="15.74">
-												<use xlink:href="img/svg/sprite.svg#icon-tringle-next"></use>
-											</svg>
+              <!--  -->
+              <div class="grid-c-r2 --about --4">
+                <div class="cell --c">
+                  <img
+                    src="img/svg/decoration/balance.svg"
+                    alt="Գիտուժ նախաձեռնություն"
+                    title="Գիտուժ նախաձեռնություն"
+                    width="273.4"
+                    height="225.96"
+                    class="about-image about-image--balance js-hta"
+                    decoding="async"
+                  />
+                </div>
+                <div class="cell --r1">
+                  <h2 class="h2 h2--about h2--about-spacer">Արժեքներ</h2>
+                </div>
+                <div class="cell --r2">
+                  <ul class="description description--about values-list">
+                    <li class="__it">
+                      <svg
+                        class="icon icon--tringle-next"
+                        width="15.74"
+                        height="15.74"
+                      >
+                        <use
+                          xlink:href="img/svg/sprite.svg#icon-tringle-next"
+                        ></use>
+                      </svg>
+                      Առաքելությանը հավատարիմ
+                    </li>
+                    <li class="__it">
+                      <svg
+                        class="icon icon--tringle-next"
+                        width="15.74"
+                        height="15.74"
+                      >
+                        <use
+                          xlink:href="img/svg/sprite.svg#icon-tringle-next"
+                        ></use>
+                      </svg>
+                      Ճշմարտասեր
+                    </li>
+                    <li class="__it">
+                      <svg
+                        class="icon icon--tringle-next"
+                        width="15.74"
+                        height="15.74"
+                      >
+                        <use
+                          xlink:href="img/svg/sprite.svg#icon-tringle-next"
+                        ></use>
+                      </svg>
+                      Համախմբող
+                    </li>
+                    <li class="__it">
+                      <svg
+                        class="icon icon--tringle-next"
+                        width="15.74"
+                        height="15.74"
+                      >
+                        <use
+                          xlink:href="img/svg/sprite.svg#icon-tringle-next"
+                        ></use>
+                      </svg>
 
-											Համագործակցող
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!--  -->
-						</div>
-					</div>
-				</section>
+                      Համագործակցող
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </section>
 
-				<section class="supporter dn">
-					<div class="section-fix">
-						<div class="supporter__content">
-							<div class="tag-cell">
-								<span class="tag">2022 թ.</span>
-							</div>
+        <section class="supporter dn">
+          <div class="section-fix">
+            <div class="supporter__content">
+              <div class="tag-cell">
+                <span class="tag">2022 թ.</span>
+              </div>
 
-							<!--  -->
-							<div class="supporter-cols">
-								<div class="__left">
-									<h3 class="h2 h2--supporter">Խոշոր <br />հովանավոր</h3>
-								</div>
-								<div class="__right">
-									<div class="arrows-cell">
-										<svg
-											class="icon icon--supporter icon--arr-to-bottom-right"
-											width="44.76"
-											height="43.14"
-										>
-											<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-										</svg>
-										<svg
-											class="icon icon--supporter icon--arr-to-bottom-right"
-											width="44.76"
-											height="43.14"
-										>
-											<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-										</svg>
-										<svg
-											class="icon icon--supporter icon--arr-to-bottom-right"
-											width="44.76"
-											height="43.14"
-										>
-											<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-										</svg>
-									</div>
+              <!--  -->
+              <div class="supporter-cols">
+                <div class="__left">
+                  <h3 class="h2 h2--supporter">Խոշոր <br />հովանավոր</h3>
+                </div>
+                <div class="__right">
+                  <div class="arrows-cell">
+                    <svg
+                      class="icon icon--supporter icon--arr-to-bottom-right"
+                      width="44.76"
+                      height="43.14"
+                    >
+                      <use
+                        xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                      ></use>
+                    </svg>
+                    <svg
+                      class="icon icon--supporter icon--arr-to-bottom-right"
+                      width="44.76"
+                      height="43.14"
+                    >
+                      <use
+                        xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                      ></use>
+                    </svg>
+                    <svg
+                      class="icon icon--supporter icon--arr-to-bottom-right"
+                      width="44.76"
+                      height="43.14"
+                    >
+                      <use
+                        xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                      ></use>
+                    </svg>
+                  </div>
 
-									<ul class="supporter-list">
-										<li class="__it">
-											<a href="#" target="_blank" rel="noreferrer noopener">Audiosoft</a>
-										</li>
-										<li class="__it">
-											<a href="#" target="_blank" rel="noreferrer noopener">Krisp</a>
-										</li>
-										<li class="__it">
-											<a href="#" target="_blank" rel="noreferrer noopener">PicsArt</a>
-										</li>
-										<li class="__it">
-											<a href="#" target="_blank" rel="noreferrer noopener"
-												>SuperAnnotate</a
-											>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!--  -->
+                  <ul class="supporter-list">
+                    <li class="__it">
+                      <a href="#" target="_blank" rel="noreferrer noopener"
+                        >Audiosoft</a
+                      >
+                    </li>
+                    <li class="__it">
+                      <a href="#" target="_blank" rel="noreferrer noopener"
+                        >Krisp</a
+                      >
+                    </li>
+                    <li class="__it">
+                      <a href="#" target="_blank" rel="noreferrer noopener"
+                        >PicsArt</a
+                      >
+                    </li>
+                    <li class="__it">
+                      <a href="#" target="_blank" rel="noreferrer noopener"
+                        >SuperAnnotate</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
 
-							<!--  -->
-							<div class="supporter-cols">
-								<div class="__left">
-									<h3 class="h2 h2--supporter">Հովանավոր</h3>
-								</div>
-								<div class="__right">
-									<div class="arrows-cell">
-										<svg
-											class="icon icon--supporter icon--arr-to-bottom-right"
-											width="44.76"
-											height="43.14"
-										>
-											<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-										</svg>
-										<svg
-											class="icon icon--supporter icon--arr-to-bottom-right"
-											width="44.76"
-											height="43.14"
-										>
-											<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-										</svg>
-										<svg
-											class="icon icon--supporter icon--arr-to-bottom-right"
-											width="44.76"
-											height="43.14"
-										>
-											<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-										</svg>
-									</div>
+              <!--  -->
+              <div class="supporter-cols">
+                <div class="__left">
+                  <h3 class="h2 h2--supporter">Հովանավոր</h3>
+                </div>
+                <div class="__right">
+                  <div class="arrows-cell">
+                    <svg
+                      class="icon icon--supporter icon--arr-to-bottom-right"
+                      width="44.76"
+                      height="43.14"
+                    >
+                      <use
+                        xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                      ></use>
+                    </svg>
+                    <svg
+                      class="icon icon--supporter icon--arr-to-bottom-right"
+                      width="44.76"
+                      height="43.14"
+                    >
+                      <use
+                        xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                      ></use>
+                    </svg>
+                    <svg
+                      class="icon icon--supporter icon--arr-to-bottom-right"
+                      width="44.76"
+                      height="43.14"
+                    >
+                      <use
+                        xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                      ></use>
+                    </svg>
+                  </div>
 
-									<!-- prettier-ignore -->
-									<ul class="supporter-list">
+                  <!-- prettier-ignore -->
+                  <ul class="supporter-list">
 										<li class="__it">
 											<a href="#" target="_blank" rel="noreferrer noopener">Արամ Ջիվանյան</a>
 										</li>
@@ -1135,941 +1316,883 @@
 											<a href="#" target="_blank" rel="noreferrer noopener">Վահե Մուսոյան</a>
 										</li>
 									</ul>
-								</div>
-							</div>
-							<!--  -->
+                </div>
+              </div>
+              <!--  -->
 
-							<!--  -->
-							<div class="supporter-cols">
-								<div class="__left">
-									<h3 class="h2 h2--supporter">Աջակից</h3>
-								</div>
-								<div class="__right">
-									<div class="arrows-cell">
-										<svg
-											class="icon icon--supporter icon--arr-to-bottom-right"
-											width="44.76"
-											height="43.14"
-										>
-											<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-										</svg>
-										<svg
-											class="icon icon--supporter icon--arr-to-bottom-right"
-											width="44.76"
-											height="43.14"
-										>
-											<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-										</svg>
-										<svg
-											class="icon icon--supporter icon--arr-to-bottom-right"
-											width="44.76"
-											height="43.14"
-										>
-											<use xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"></use>
-										</svg>
-									</div>
+              <!--  -->
+              <div class="supporter-cols">
+                <div class="__left">
+                  <h3 class="h2 h2--supporter">Աջակից</h3>
+                </div>
+                <div class="__right">
+                  <div class="arrows-cell">
+                    <svg
+                      class="icon icon--supporter icon--arr-to-bottom-right"
+                      width="44.76"
+                      height="43.14"
+                    >
+                      <use
+                        xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                      ></use>
+                    </svg>
+                    <svg
+                      class="icon icon--supporter icon--arr-to-bottom-right"
+                      width="44.76"
+                      height="43.14"
+                    >
+                      <use
+                        xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                      ></use>
+                    </svg>
+                    <svg
+                      class="icon icon--supporter icon--arr-to-bottom-right"
+                      width="44.76"
+                      height="43.14"
+                    >
+                      <use
+                        xlink:href="img/svg/sprite.svg#icon-arr-to-bottom-right"
+                      ></use>
+                    </svg>
+                  </div>
 
-									<!-- prettier-ignore -->
-									<ul class="supporter-list supporter-list--last">
+                  <!-- prettier-ignore -->
+                  <ul class="supporter-list supporter-list--last">
 										<li class="__it"><a href="#" target="_blank" rel="noreferrer noopener">Գևորգ Սաֆարյան</a></li>
 										<li class="__it"><a href="#" target="_blank" rel="noreferrer noopener">Նարեկ Վարդանյան</a></li>
 										<li class="__it"><a href="#" target="_blank" rel="noreferrer noopener">VCV</a></li>
 									</ul>
-								</div>
-							</div>
-							<!--  -->
-						</div>
-					</div>
-				</section>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </section>
 
-				<section class="companies dn">
-					<div class="section-fix">
-						<div class="companies__content">
-							<h2 class="h2 h2--companies">Կազմակերպություններ</h2>
-							<!--  -->
-							<div class="company-list">
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
+        <section class="companies dn">
+          <div class="section-fix">
+            <div class="companies__content">
+              <h2 class="h2 h2--companies">Կազմակերպություններ</h2>
+              <!--  -->
+              <div class="company-list">
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
 
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
 
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
 
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
+                <div class="company-block">
+                  <a
+                    href="https://uate.org/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <img
+                      src="img/companies/UTAE_200.jpg"
+                      alt="UTAE"
+                      title="UTAE"
+                      width="158"
+                      height="158"
+                      decoding="async"
+                      class="company-block__img js-hta"
+                    />
+                  </a>
+                </div>
 
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
 
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
+            </div>
+          </div>
+        </section>
 
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
+        <section class="persons dn">
+          <div class="section-fix">
+            <div class="persons__content">
+              <h2 class="h2 h2--persons">
+                Ձեռներեցներ, Հիմնադիրներ և Գլխավոր մենեջերներ
+              </h2>
+              <!--  === PERSONS  === -->
+              <div class="persons-list">
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-								<div class="company-block">
-									<a href="https://uate.org/" target="_blank" rel="noreferrer noopener">
-										<img
-											src="img/companies/UTAE_200.jpg"
-											alt="UTAE"
-											title="UTAE"
-											width="158"
-											height="158"
-											decoding="async"
-											class="company-block__img js-hta"
-										/>
-									</a>
-								</div>
-							</div>
-							<!--  -->
-						</div>
-					</div>
-				</section>
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-				<section class="persons dn">
-					<div class="section-fix">
-						<div class="persons__content">
-							<h2 class="h2 h2--persons">
-								Ձեռներեցներ, Հիմնադիրներ և Գլխավոր մենեջերներ
-							</h2>
-							<!--  === PERSONS  === -->
-							<div class="persons-list">
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+                <div class="person-block">
+                  <img
+                    src="img/persons/Narine-Kotikyan.jpg"
+                    class="__img js-hta"
+                    width="169.98"
+                    height="169.98"
+                    alt="Narine Kotikyan"
+                    title="Narine Kotikyan"
+                  />
+                  <h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+                  <!--  -->
+                  <div class="soc-links soc-links--persons soc-links--invert">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="soc-link soc-link--fb"
+                      aria-label="Գիտուժ facebook"
+                      rel="noreferrer noopener"
+                    >
+                      <svg class="icon icon--soc-fb" width="10" height="21">
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/"
+                      target="_blank"
+                      class="soc-link"
+                      aria-label="Գիտուժ linkedin"
+                      rel="noreferrer noopener"
+                    >
+                      <svg
+                        class="icon icon--soc-in"
+                        width="17.52"
+                        height="17.52"
+                      >
+                        <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <!--  -->
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-								<div class="person-block">
-									<img
-										src="img/persons/Narine-Kotikyan.jpg"
-										class="__img js-hta"
-										width="169.98"
-										height="169.98"
-										alt="Narine Kotikyan"
-										title="Narine Kotikyan"
-									/>
-									<h3 class="__title">ՆԱՐԻՆԵ ԿՈՏԻԿՅԱՆ</h3>
+                  <div class="__descr">
+                    «Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն
+                    «Startup Grind Yerevan» կազմակերպության տնօրեն «Founder
+                    Institute Yerevan» կազմակերպության տնօրեն
+                  </div>
+                </div>
+              </div>
+              <!--  === PERSONS  === -->
+            </div>
+          </div>
+        </section>
+      </main>
 
-									<!--  -->
-									<div class="soc-links soc-links--persons soc-links--invert">
-										<a
-											href="https://www.facebook.com/"
-											target="_blank"
-											class="soc-link soc-link--fb"
-											aria-label="Գիտուժ facebook"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-fb" width="10" height="21">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-											</svg>
-										</a>
-										<a
-											href="https://www.linkedin.com/company/"
-											target="_blank"
-											class="soc-link"
-											aria-label="Գիտուժ linkedin"
-											rel="noreferrer noopener"
-										>
-											<svg class="icon icon--soc-in" width="17.52" height="17.52">
-												<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-											</svg>
-										</a>
-									</div>
-									<!--  -->
+      <footer class="footer footer--spacer">
+        <div class="section-fix">
+          <div class="footer__content">
+            <div class="contact-info">
+              <div class="contact-info__row">
+                Էլ.հասցե։ <strong>info@gituzh.org</strong>
+              </div>
+              <div class="contact-info__row">
+                Հեռ.: <strong>+374 (94) 87 83 00</strong>
+              </div>
+            </div>
 
-									<div class="__descr">
-										«Spacetab» ընկերության համահիմնադիր և գործադիր տնօրեն «Startup Grind
-										Yerevan» կազմակերպության տնօրեն «Founder Institute Yerevan»
-										կազմակերպության տնօրեն
-									</div>
-								</div>
-							</div>
-							<!--  === PERSONS  === -->
-						</div>
-					</div>
-				</section>
-			</main>
-
-			<footer class="footer footer--spacer">
-				<div class="section-fix">
-					<div class="footer__content">
-						<div class="contact-info">
-							<div class="contact-info__row">
-								Էլ.հասցե։ <strong>info@gituzh.org</strong>
-							</div>
-							<div class="contact-info__row">
-								Հեռ.: <strong>+374 (94) 87 83 00</strong>
-							</div>
-						</div>
-
-						<!-- prettier-ignore -->
-						<ul class="entity-links">
+            <!-- prettier-ignore -->
+            <ul class="entity-links">
        <li class="entity-links__li entity-links__li--current"><a href="#">Մեր մասին</a></li>
        <li class="entity-links__li"><a href="#">Համայնք</a></li>
        <li class="entity-links__li"><a href="#">Աջակիցներ</a></li>
@@ -2079,80 +2202,91 @@
        <li class="entity-links__li"><a href="#">Աջակցել</a></li>
       </ul>
 
-						<div class="soc-info">
-							<div class="soc-info__row">Հետևի՛ր մեզ սոցիալական ցանցերում:</div>
-							<div class="soc-info__row">
-								<div class="soc-links soc-links--footer">
-									<a
-										href="https://www.facebook.com/gituzh.am/"
-										target="_blank"
-										class="soc-link soc-link--fb"
-										aria-label="Գիտուժ facebook"
-										rel="noreferrer noopener"
-									>
-										<svg class="icon icon--soc-fb" width="10" height="21">
-											<use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
-										</svg>
-									</a>
-									<a
-										href="https://www.linkedin.com/company/gituzh/"
-										target="_blank"
-										class="soc-link"
-										aria-label="Գիտուժ linkedin"
-										rel="noreferrer noopener"
-									>
-										<svg class="icon icon--soc-in" width="17.52" height="17.52">
-											<use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
-										</svg>
-									</a>
-									<a
-										href="https://twitter.com/gituzh"
-										target="_blank"
-										class="soc-link"
-										aria-label="Գիտուժ twitter"
-										rel="noreferrer noopener"
-									>
-										<svg class="icon icon--soc-tw" width="18.15" height="14.75">
-											<use xlink:href="img/svg/sprite.svg#icon-soc-tw"></use>
-										</svg>
-									</a>
-									<a
-										href="https://www.instagram.com/gituzh.am/"
-										target="_blank"
-										class="soc-link"
-										aria-label="Գիտուժ instagram"
-										rel="noreferrer noopener"
-									>
-										<svg class="icon icon--soc-inst" width="18.2" height="18.2">
-											<use xlink:href="img/svg/sprite.svg#icon-soc-inst"></use>
-										</svg>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-			<!-- progress-wrap -->
-			<div class="progress-wrap">
-				<svg
-					class="progress-circle svg-content"
-					width="100%"
-					height="100%"
-					viewBox="-1 -1 102 102"
-					xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink"
-				>
-					<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-				</svg>
-			</div>
-			<!-- /progress-wrap -->
-		</div>
+            <div class="soc-info">
+              <div class="soc-info__row">Հետևի՛ր մեզ սոցիալական ցանցերում:</div>
+              <div class="soc-info__row">
+                <div class="soc-links soc-links--footer">
+                  <a
+                    href="https://www.facebook.com/gituzh.am/"
+                    target="_blank"
+                    class="soc-link soc-link--fb"
+                    aria-label="Գիտուժ facebook"
+                    rel="noreferrer noopener"
+                  >
+                    <svg class="icon icon--soc-fb" width="10" height="21">
+                      <use xlink:href="img/svg/sprite.svg#icon-soc-fb"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/gituzh/"
+                    target="_blank"
+                    class="soc-link"
+                    aria-label="Գիտուժ linkedin"
+                    rel="noreferrer noopener"
+                  >
+                    <svg class="icon icon--soc-in" width="17.52" height="17.52">
+                      <use xlink:href="img/svg/sprite.svg#icon-soc-in"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://twitter.com/gituzh"
+                    target="_blank"
+                    class="soc-link"
+                    aria-label="Գիտուժ twitter"
+                    rel="noreferrer noopener"
+                  >
+                    <svg class="icon icon--soc-tw" width="18.15" height="14.75">
+                      <use xlink:href="img/svg/sprite.svg#icon-soc-tw"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/gituzh.am/"
+                    target="_blank"
+                    class="soc-link"
+                    aria-label="Գիտուժ instagram"
+                    rel="noreferrer noopener"
+                  >
+                    <svg class="icon icon--soc-inst" width="18.2" height="18.2">
+                      <use xlink:href="img/svg/sprite.svg#icon-soc-inst"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- progress-wrap -->
+      <div class="progress-wrap">
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
+      <!-- /progress-wrap -->
+    </div>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/anime.min.js"></script>
-		<script src="js/countUp.min.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/countUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/SplitText3.min.js"></script>
+    <script src="js/smooth-scrollbar.min.js"></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.min.js"
+      integrity="sha512-UOuvdHxPTS8D5IoOYOwLGAN05jYYXKhxFOZDe/24o53eOOf9ylws0uPfV+gRj/k1z17C0KtC7Vkt+5H7BLQxOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
