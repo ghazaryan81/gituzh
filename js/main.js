@@ -159,45 +159,45 @@ window.onload = function () {
 
 // Scrollbar.init(document.querySelector(".js-smooth-scrollbar"));
 
-const tl = gsap.timeline(),
-  mySplitText = new SplitText(".js-gsap-txt", { type: "lines" }),
-  lines = mySplitText.lines;
+// const tl = gsap.timeline(),
+//   mySplitText = new SplitText(".js-gsap-txt", { type: "lines" }),
+//   lines = mySplitText.lines;
 
-gsap.set(".js-gsap-txt", { perspective: 400 });
+// gsap.set(".js-gsap-txt", { perspective: 400 });
 
-tl.from(
-  lines,
-  {
-    duration: 1.5,
-    opacity: 0,
-    y: 60,
-    rotationX: -90,
-    transformOrigin: "0% 50% -50",
-    ease: "power3.out",
-    stagger: 0.15
-  },
-  "+=0"
-);
+// tl.from(
+//   lines,
+//   {
+//     duration: 1.5,
+//     opacity: 0,
+//     y: 60,
+//     rotationX: -90,
+//     transformOrigin: "0% 50% -50",
+//     ease: "power3.out",
+//     stagger: 0.15
+//   },
+//   "+=0"
+// );
 
-gsap.registerPlugin(SplitText);
+// gsap.registerPlugin(SplitText);
 
-const mySplitText2 = new SplitText(".js-typo-intro-2", {
-  type: "words,chars"
-});
+// const mySplitText2 = new SplitText(".js-typo-intro-2", {
+//   type: "words,chars"
+// });
 
-const tl2 = gsap.timeline();
+// const tl2 = gsap.timeline();
 
-tl2.set(".js-typo-intro-2", { perspective: 400 }).from(mySplitText2.chars, {
-  duration: 0.8,
-  opacity: 0,
-  scale: 0,
-  y: 80,
-  rotationX: 180,
-  transformOrigin: "0% 50% -50%",
-  ease: "back",
-  stagger: 0.01
-});
+// tl2.set(".js-typo-intro-2", { perspective: 400 }).from(mySplitText2.chars, {
+//   duration: 0.8,
+//   opacity: 0,
+//   scale: 0,
+//   y: 80,
+//   rotationX: 180,
+//   transformOrigin: "0% 50% -50%",
+//   ease: "back",
+//   stagger: 0.01
+// });
 
-const restart = () => {
-  tl.restart();
-};
+// const restart = () => {
+//   tl.restart();
+// };
